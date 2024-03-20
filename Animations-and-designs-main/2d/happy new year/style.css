@@ -1,0 +1,344 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(0, 31, 26);
+}
+body::before{
+    content: '';
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(rgb(255, 121, 68),rgb(56, 27, 0));
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    animation: animate 5s infinite;
+    animation-delay: -2.5s;
+}
+.logo::before{
+    content: '';
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(rgb(33, 0, 43),rgb(204, 0, 255));
+    border-radius: 20px;
+    position: absolute;
+    bottom: 35%;
+    right: 70%;
+    animation: animate 5s infinite;
+}
+@keyframes animate {
+    0%,100%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    
+}
+.logo span{
+    font-size:40px;
+    color: rgb(0, 31, 26);
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    
+}
+.logo .h{
+    animation: animate-h 2.5s infinite;
+}
+@keyframes animate-h {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    5%{
+        transform: translatey(-30px);
+        color: rgb(255, 130, 47);
+        text-shadow: 0 0 20px rgb(255, 186, 146);
+    }
+    40%{
+        transform: translatey(-30px);
+        color: rgb(245, 107, 16);
+        text-shadow: 0 0 20px rgb(255, 195, 161);
+    }
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .a{
+    animation: animate-a 2.5s infinite;
+}
+@keyframes animate-a {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    10%{
+        transform: translatey(-30px);
+        color: rgb(208, 255, 0);
+        text-shadow: 0 0 20px rgb(234, 255, 118);
+    }
+    45%{
+        transform: translatey(-30px);
+        color: rgb(208, 255, 0);
+        text-shadow: 0 0 20px rgb(234, 255, 118);
+    }
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .p{
+    animation: animate-p 2.5s infinite;
+}
+@keyframes animate-p {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    15%{
+        transform: translatey(-30px);
+        color: rgb(245, 107, 16);
+        text-shadow: 0 0 20px rgb(255, 195, 161);
+    }
+    50%{
+        transform: translatey(-30px);
+        color: rgb(245, 107, 16);
+        text-shadow: 0 0 20px rgb(255, 195, 161);
+    }
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .p-1{
+    animation: animate-p-1 2.5s infinite;
+}
+@keyframes animate-p-1 {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    20%{
+        transform: translatey(-30px);
+        color: cyan;
+        text-shadow: 0 0 20px cyan;
+    }
+    55%{
+        transform: translatey(-30px);
+        color: cyan;
+        text-shadow: 0 0 20px cyan;
+    }
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .y{
+    animation: animate-y 2.5s infinite;
+}
+@keyframes animate-y {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    25%{
+        transform: translatey(-30px);
+        color: rgb(225, 0, 255);
+        text-shadow: 0 0 20px rgb(238, 108, 255);
+    }
+    60%{
+        transform: translatey(-30px);
+        color: rgb(225, 0, 255);
+        text-shadow: 0 0 20px rgb(238, 108, 255);
+    }
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .n{
+    animation: animate-n 2.5s infinite;
+}
+@keyframes animate-n {
+    0%{
+        text-shadow: 0 0 0px rgb(161, 167, 167);
+        color: rgb(0, 31, 26);
+    }
+    30%{
+        transform: translatey(-30px);
+        color: rgb(245, 107, 16);
+        text-shadow: 0 0 20px rgb(255, 195, 161);
+    }
+    65%{
+        transform: translatey(-30px);
+        color: rgb(245, 107, 16);
+        text-shadow: 0 0 20px rgb(255, 195, 161);
+    }
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .e{
+    animation: animate-e 2.5s infinite;
+}
+@keyframes animate-e {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    35%{
+        transform: translatey(-30px);
+        color: cyan;
+        text-shadow: 0 0 20px cyan;
+    }
+    70%{
+        transform: translatey(-30px);
+        color: cyan;
+        text-shadow: 0 0 20px cyan;
+    }
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .w{
+    animation: animate-w 2.5s infinite;
+}
+@keyframes animate-w {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    40%{
+        transform: translatey(-30px);
+        color: rgb(225, 0, 255);
+        text-shadow: 0 0 20px rgb(238, 108, 255);
+    }
+    75%{
+        transform: translatey(-30px);
+        color: rgb(225, 0, 255);
+        text-shadow: 0 0 20px rgb(238, 108, 255);
+    }
+
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .y-1{
+    animation: animate-y-1 2.5s infinite;
+}
+@keyframes animate-y-1 {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    45%{
+        transform: translatey(-30px);
+        color: rgb(208, 255, 0);
+        text-shadow: 0 0 20px rgb(234, 255, 118);
+    }
+    80%{
+        transform: translatey(-30px);
+        color: rgb(208, 255, 0);
+        text-shadow: 0 0 20px rgb(234, 255, 118);
+    }
+
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .e-1{
+    animation: animate-e-1 2.5s infinite;
+}
+@keyframes animate-e-1 {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    50%{
+        transform: translatey(-30px);
+        color: rgb(245, 107, 16);
+        text-shadow: 0 0 20px rgb(255, 195, 161);
+    }
+    85%{
+        transform: translatey(-30px);
+        color: rgb(245, 107, 16);
+        text-shadow: 0 0 20px rgb(255, 195, 161);
+    }
+
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .a-1{
+    animation: animate-a-1 2.5s infinite;
+}
+@keyframes animate-a-1 {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    55%{
+        transform: translatey(-30px);
+        color: cyan;
+        text-shadow: 0 0 20px cyan;
+    }
+    90%{
+        transform: translatey(-30px);
+        color: cyan;
+        text-shadow: 0 0 20px cyan;
+    }
+    100%{
+        transform: translatey(0px);
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+}
+.logo .r{
+    animation: animate-r 2.5s infinite;
+}
+@keyframes animate-r {
+    0%{
+        text-shadow: 0 0 0px cyan;
+        color: rgb(0, 31, 26);
+    }
+    60%{
+        transform: translatey(-30px);
+        color: rgb(208, 255, 0);
+        text-shadow: 0 0 20px rgb(234, 255, 118);
+    }
+    95%{
+        transform: translatey(-30px);
+        color: rgb(208, 255, 0);
+        text-shadow: 0 0 20px rgb(234, 255, 118);
+    }
+    100%{
+        transform: translatey(0px);
+        color: rgb(0, 31, 26);
+        text-shadow: 0 0 0px cyan;
+    }
+}

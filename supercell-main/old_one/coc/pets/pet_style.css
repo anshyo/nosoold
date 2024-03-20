@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background.jpg) repeat fixed 100%;
+    background-size: cover;
+}
+div{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));  
+    height: 60%;
+    width: 40%;       
+    border-radius: 50px;       
+}  
+
+
+
+
+
+.c-1{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.c-1 img{
+    height: 140px;
+    position: relative;
+    top: 20%;
+   left: 10%;
+}
+.c-1 h1{
+    color: white;
+    top: 40%;
+    left: 63%;
+    position: relative;
+    transform: translate(-50%,-50%);
+}
+.c-1 p{
+    position: relative;
+    margin-left: 50%;
+    top: -15%;
+    margin-right: 5%;
+    transform: translate(0,-50%);
+    color: white;
+}
+
+
+
+.c-2{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+}
+.c-2 img{
+    height: 140px;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+.c-2 h1{
+    color: white;
+    top: 40%;
+    left: 60%;
+    position: relative;
+    transform: translate(-50%,-50%);
+}
+.c-2 p{
+    position: relative;
+    margin-left: 50%;
+    top: 0%;
+    margin-right: 5%;
+    transform: translate(0,-50%);
+    color: white;
+}
+
+
+.c-3{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+.c-3 img{
+    height: 140px;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+.c-3 h1{
+    color: white;
+    top: 40%;
+    left: 65%;
+    position: relative;
+    transform: translate(-50%,-50%);
+}
+.c-3 p{
+    position: relative;
+    margin-left: 50%;
+    top: -5%;
+    margin-right: 5%;
+    transform: translate(0,-50%);
+    color: white;
+}
+
+
+.c-4{
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    bottom: 10%;
+}
+.c-4 img{
+    height: 140px;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+.c-4 h1{
+    color: white;
+    top: 40%;
+    left: 65%;
+    position: relative;
+    transform: translate(-50%,-50%);
+}
+.c-4 p{
+    position: relative;
+    margin-left: 50%;
+    top: -5%;
+    margin-right: 5%;
+    transform: translate(0,-50%);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+.buttons div{
+    height: 120px ;
+    width: 30%;
+    background: black;
+    border-radius: 30px;
+    transition: .4s ease;
+}
+
+.buttons  p{
+    margin-left: 150px;
+    text-align: center;
+    position: relative;
+    top: -37%;
+    font-size: 30px;
+    text-decoration: none;
+    color: blanchedalmond;
+    
+}
+.buttons a{
+    text-decoration: none ;
+}
+.buttons .c-1{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+.buttons .c-2{
+    position: absolute;
+    top: 80%;
+    left: 60%;
+}
+.buttons .c-3{
+    position: absolute;
+    top: 110%;
+    left: 10%;
+}
+.buttons .c-4{
+    position: absolute;
+    top: 110%;
+    left: 60%;
+}
+.buttons .c-5{
+    position: absolute;
+    top: 140%;
+    left: 35%;
+}
+.buttons .c-1:hover{
+    background: rgb(43, 0, 68) ;
+    transition: .4s ease;
+    box-shadow: 0 0 50px rgb(176, 79, 255);
+}
+.buttons .c-2:hover{
+    background: rgb(0, 31, 117) ;
+    transition: .4s ease;
+    box-shadow: 0 0 50px rgb(94, 83, 255);
+}
+.buttons .c-3:hover{
+    background: rgb(117, 33, 0) ;
+    transition: .4s ease;
+    box-shadow: 0 0 50px rgb(255, 129, 79);
+}
+.buttons .c-4:hover{
+    background: rgb(117, 0, 0) ;
+    transition: .4s ease;
+    box-shadow: 0 0 50px rgb(255, 79, 79);
+}
+.buttons .c-5:hover{
+    background: rgb(0, 82, 18) ;
+    transition: .4s ease;
+    box-shadow: 0 0 50px rgb(79, 255, 108);
+}
+.bottom{
+    background-color: black;
+    border-radius: 20px 20px 0 0;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    top: 170%;
+}
+.last{
+    position: relative;
+    top: 25px;
+    margin-left: 20px;
+}
+.last li{
+    display: inline-block;
+    
+}
+
+
+
+

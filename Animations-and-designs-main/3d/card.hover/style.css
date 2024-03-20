@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.area{
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    /* border: 1px solid rgba(245, 222, 179, 0.356); */
+    transform-style: preserve-3d;
+    transition: 3s;
+}
+.area:hover{
+    transform: translate(-50%,-50%) rotateX(50deg) rotateZ(45deg);
+    transition: 2s;
+}
+.area .card{
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    /* border: 1px solid rgba(245, 222, 179, 0.377); */
+    background: linear-gradient(90deg,rgba(163, 106, 80, 0.192),rgba(255, 102, 0, 0.185));
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    transition: 3s;
+}
+.area:hover .card{
+    transform: translate(-50%,-50%) translateZ(calc(var(--i)*20px));
+    transition: 2s;
+}

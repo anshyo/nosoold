@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}
+.area{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+.area .maingrid{
+    position: absolute;
+    height: 3200px;
+    width: 3200px;
+    border: 4px wheat solid;
+    transform: translate(-50%,-50%) scale(0.2) rotateX(65deg) rotateZ(50deg);
+    top: 50%;
+    left: 50%;
+}
+.area .grid{
+    margin-left: -400px;
+    margin-top: -400px;
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid wheat; */
+    position: absolute;
+    top: calc(var(--i)*800px);
+    left: calc(var(--j)*800px);
+    transform: translate(-50%,-50%) ;
+    transform: translate(-50%,-50%) ;
+    transform-style: preserve-3d;
+    animation: main 80s infinite;
+
+}
+/* @keyframes main {
+    0%{
+        transform: translate(-50%,-50%) rotateX(65deg) rotateZ(50deg) scale;
+    }
+    10%{
+        transform: translate(-50%,-50%) rotateX(65deg) rotateZ(50deg) scale;
+    }
+    12%{
+        transform: translate(-50%,-50%) rotateX(65deg) rotateZ(140deg) scale;
+    }
+    20%{
+        transform: translate(-50%,-50%) rotateX(65deg) rotateZ(140deg) scale;
+    }
+    100%{
+        transform: translate(-50%,-50%) rotateX(65deg) rotateZ(900deg) scale;
+    }
+
+} */
+.area .grid .card{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: calc(var(--i)*25%);
+    transform-style: preserve-3d;
+    animation: card 20s infinite;
+    animation-delay: calc(var(--l)*0.5s);
+    transform: translate(-50%,-50%);
+    margin-top: -30px;
+    margin-left: -50px;
+}
+.area .grid .card-1{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 45%;
+    left: calc(var(--i)*25%);
+    transform-style: preserve-3d;
+    animation: card 20s infinite;
+    animation-delay: calc(var(--l)*0.5s);
+    transform: translate(-50%,-50%);
+    margin-top: -30px;
+    margin-left: -50px;
+}
+.area .grid .card-3{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 70%;
+    left: calc(var(--i)*25%);
+    transform-style: preserve-3d;
+    animation: card 20s infinite;
+    animation-delay: calc(var(--l)*0.5s);
+    transform: translate(-50%,-50%);
+    margin-top: -30px;
+    margin-left: -50px;
+}
+.area .grid .card-4{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 95%;
+    left: calc(var(--i)*25%);
+    transform-style: preserve-3d;
+    animation: card 20s infinite;
+    animation-delay: calc(var(--l)*0.5s);
+    transform: translate(-50%,-50%);
+    margin-top: -30px;
+    margin-left: -50px;
+}
+@keyframes card {
+    0%{
+        transform: translate(-50%,-50%);
+    }
+    7.5%{
+        transform: translate(-50%,-50%) translateZ(60px) rotatey(180deg);
+    }
+    52%{
+        transform: translate(-50%,-50%) translateZ(60px) rotatey(180deg);
+    }
+    67%{
+        transform: translate(-50%,-50%) rotatey(180deg);
+    }
+    75%{
+        transform: translate(-50%,-50%) rotatey(360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotatey(360deg);
+    }
+}
+.area .grid .face{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid wheat; */
+    background: rgba(59, 189, 59, 0.24);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* animation: card 5s infinite; */
+}
+.area .grid .f-1{
+    background: linear-gradient(45deg,rgb(255, 72, 0),rgb(185, 17, 5));
+    transform: translate(-50%,-50%) translateZ(2.5px);
+}
+.area .grid .f-2{
+    background: linear-gradient(135deg,rgb(54, 201, 18),rgb(4, 88, 109));
+    transform: translate(-50%,-50%) translateZ(-2.5px);
+}
+.area .grid .fac{
+    height: 100px;
+    width: 5px;
+    /* border: 1px solid wheat; */
+    background: rgba(59, 189, 59, 0.24);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* animation: card 5s infinite; */
+}
+.area .grid .f-3{
+    background: linear-gradient(rgb(129, 45, 224),rgb(53, 33, 77));
+    transform: translate(-50%,-50%) rotateY(90deg) translateZ(50px);
+}
+.area .grid .f-4{
+    background: linear-gradient(rgb(129, 45, 224),rgb(53, 33, 77));
+    transform: translate(-50%,-50%) rotateY(90deg) translateZ(-50px);
+}
+.area .grid .f-5{
+    background: linear-gradient(rgb(129, 45, 224),rgb(53, 33, 77));
+    transform: translate(-50%,-50%) rotateX(90deg) rotateZ(90deg) translateZ(50px);
+}
+
+.area .grid .f-6{
+    background: linear-gradient(rgb(129, 45, 224),rgb(53, 33, 77));
+    transform: translate(-50%,-50%) rotateX(90deg) rotateZ(90deg) translateZ(-50px);
+}

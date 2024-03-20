@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(22, 22, 22);
+}
+.area{
+    height: 450px;
+    width: 600px;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(.5);
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    /* overflow: hidden; */
+}
+.tdarea{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%) rotatex(-40deg) rotateY(-40deg);
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+}
+.tdarea:hover{
+    transform: translate(-50%,-50%) rotatex(-150deg) rotateY(-150deg);
+    transition: 2s;
+}
+.bordersu{
+    height: 100%;
+    width: 100%;
+    border: rgb(0, 68, 255) 1px solid;
+    position: absolute;
+    transform: translate(-50%,-50%) translateZ(calc(var(--i)*100px));
+    top: 50%;
+    left: 50%;
+}
+
+.bordersl{
+    height: 1200px;
+    width: 100%;
+    border: rgb(255, 0, 0) 1px solid;
+    position: absolute;
+    transform: translate(-50%,-50%)  rotateX(90deg) translateZ(calc(var(--i)*75px));
+    top: 50%;
+    left: 50%;
+}
+.base{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%,-50%) rotateX(90deg) translateZ(-225px);
+    background-color: rgb(65, 33, 38);
+    transform-style: preserve-3d;
+}
+.bulding{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* background-color: rgba(240, 248, 255, 0.295); */
+    height: 60px;
+    width: 60px;
+    transform-style: preserve-3d;
+    transform: translateZ(-2px);
+}
+.bulding .side{
+    position: absolute;
+    width: 58px;
+    height: 498px;
+    /* background-color: #fff1; */
+    /* border: 2px white solid; */
+    box-shadow: 0 0 1000000px white;
+    transform: rotateX(-90deg) translateZ(-250px) translateY(-250px);
+}
+.bulding .side3{
+    transform: rotateX(-90deg) translateZ(-190px) translateY(-250px);
+}
+.bulding .side4{
+    transform: rotateX(-90deg) rotateY(90deg) translateX(220px) translateZ(30px) translateY(-250px);
+}
+.bulding .side5{
+    transform: rotateX(-90deg) translateZ(-190px) translateY(-250px);
+    transform: rotateX(-90deg) rotateY(90deg) translateX(220px) translateZ(-30px) translateY(-250px);
+}
+.b2{
+    left: 530px;
+}
+.b3{
+    top: 530px;
+}
+.b4{
+    top: 530px;
+    left: 530px;
+}

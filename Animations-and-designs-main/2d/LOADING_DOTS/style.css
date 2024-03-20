@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 40, 43);
+}
+.container{
+    width: 620px;
+    height: 42%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+/* if you want to give refelection just uncomment below one */
+
+
+/* .container{
+    width: 620px;
+    height: 42%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-box-reflect: below 0px linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.822));
+} */
+.container .dots{
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+    border: 18px rgb(0, 40, 43) solid;
+    box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    border-radius: 50%;
+    background-color: transparent;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    animation: colors infinite 2s;
+
+}
+.container .dots::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(52, 179, 179);
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 5px rgba(0,0,0,0.1),inset -1px -1px 5px rgba(255,255,255,1);
+    transform: scale(0);
+    animation: animate 5s linear infinite, _color 5s infinite;
+    animation-delay: calc(var(--i) * 0.2s) ;
+}
+@keyframes animate {
+    0%,9.99%,70.0001%{
+        transform: scale(0);
+    }
+    10%,70%{
+        transform: scale(1);
+    }
+}
+@keyframes _color {
+    0%{
+        filter:hue-rotate(0deg)
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.container .dot-1{
+    left: 70px;
+    animation: animate2-1 10s infinite, shadow 3s infinite;
+}
+@keyframes animate2-1 {
+    0%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    10%{
+        transform: translate(-50%,-100%);
+        box-shadow: 0px 0px 50px rgb(0, 70, 102), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    20%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    100%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+}
+.container .dot-2{
+    left: 190px;
+    animation: animate2-2 10s infinite , shadow 3s infinite;
+}
+@keyframes animate2-2 {
+    0%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    20%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    30%{
+        transform: translate(-50%,0%);
+        box-shadow: 0px 0px 50px rgb(0, 70, 102), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    40%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    100%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+}
+.container .dot-3{
+    left: 310px;
+    animation: animate2-3 10s infinite, shadow 3s infinite;
+}
+@keyframes animate2-3 {
+    0%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    40%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    50%{
+        transform: translate(-50%,-100%);
+        box-shadow: 0px 0px 50px rgb(0, 70, 102), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    60%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    100%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+}
+.container .dot-4{
+    left: 430px;
+    animation: animate2-4 10s infinite, shadow 3s infinite;
+}
+@keyframes animate2-4 {
+    0%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    60%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    70%{
+        transform: translate(-50%,0%);
+        box-shadow: 0px 0px 50px rgb(0, 70, 102), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    80%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    100%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+}
+.container .dot-5{
+    left: 550px;
+    animation: animate2-5 10s infinite, shadow 3s infinite;
+}
+@keyframes animate2-5 {
+    0%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    80%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    90%{
+        transform: translate(-50%,-100%);
+        box-shadow: 0px 0px 50px rgb(0, 70, 102), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+    100%{
+        transform: translate(-50%,-50%);
+        box-shadow: 10px 10px 15px rgb(0, 25, 39), inset 10px 10px 15px rgb(0, 25, 39);
+    }
+}
+
+
+

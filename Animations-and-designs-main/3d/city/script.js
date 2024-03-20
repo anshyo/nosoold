@@ -1,0 +1,1 @@
+const outlines = document.querySelector(".area .tdarea")

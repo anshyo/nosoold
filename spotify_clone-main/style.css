@@ -1,0 +1,889 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background-color: rgb(31, 31, 31);
+    /* transform-style: preserve-3d; */
+}
+.full{
+    width: 1366px;
+    height: 677px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* transform: var(--middle); */
+    box-shadow: rgb(15, 15, 15) 0 0 20px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+.side-bar{
+    background-color: black;
+    height: 86.5%;
+    width: 20%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.side-bar .logo{
+    transform: translate(0%,-50%);
+    top: 8%;
+    left: 8%;
+    position: absolute;
+    /* height: 60px; */
+}
+
+
+
+.side-bar .nav{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 255, 0.185); */
+    transform: translate(-50%,-50%);
+    top: 28%;
+    left: 50%;
+    position: absolute;
+}
+.side-bar .nav .home{
+    height: 50px;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    /* background-color: rgba(0, 0, 255, 0.205); */
+}
+.side-bar .nav .home .ico{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 10%;
+    position: absolute;
+}
+.side-bar .nav .home h1{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 25%;
+    position: absolute;
+    font-size: 13px;
+    color: white;
+}
+
+
+
+
+.side-bar .nav .search{
+    height: 50px;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    /* background-color: rgba(0, 0, 255, 0.205); */
+}
+.side-bar .nav .search .ico{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 10%;
+    position: absolute;
+}
+.side-bar .nav .search h1{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 25%;
+    position: absolute;
+    font-size: 13px;
+    color: white;
+}
+
+
+
+.side-bar .nav .lib{
+    height: 50px;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 75%;
+    left: 50%;
+    position: absolute;
+    /* background-color: rgba(0, 0, 255, 0.205); */
+}
+.side-bar .nav .lib .ico{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 10%;
+    position: absolute;
+}
+.side-bar .nav .lib h1{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 25%;
+    position: absolute;
+    font-size: 13px;
+    color: white;
+}
+
+
+
+
+
+
+
+.side-bar .n-2{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 255, 0.185); */
+    transform: translate(-50%,-50%);
+    top: 53%;
+    left: 50%;
+    position: absolute;
+}
+.side-bar .n-2 .home{
+    height: 50px;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    /* background-color: rgba(0, 0, 255, 0.205); */
+}
+.side-bar .n-2 .home .ico{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 10%;
+    position: absolute;
+}
+.side-bar .n-2 .home h1{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 25%;
+    position: absolute;
+    font-size: 13px;
+    color: white;
+}
+
+
+
+
+.side-bar .n-2 .search{
+    height: 50px;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    /* background-color: rgba(0, 0, 255, 0.205); */
+}
+.side-bar .n-2 .search .ico{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 10%;
+    position: absolute;
+}
+.side-bar .n-2 .search h1{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 25%;
+    position: absolute;
+    font-size: 13px;
+    color: white;
+}
+
+
+
+.side-bar .n-2 .lib{
+    height: 50px;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 75%;
+    left: 50%;
+    position: absolute;
+    /* background-color: rgba(0, 0, 255, 0.205); */
+}
+.side-bar .n-2 .lib .ico{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 10%;
+    position: absolute;
+}
+.side-bar .n-2 .lib h1{
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 25%;
+    position: absolute;
+    font-size: 13px;
+    color: white;
+}
+.side-bar .div{
+    border-bottom: rgba(255, 255, 255, 0.226) 0.5px solid;
+    height: 1px;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    top: 65%;
+    left: 50%;
+    position: absolute;
+}
+
+
+
+.side-bar .list{
+    height: 30%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 82%;
+    left: 50%;
+    /* background-color: rgba(255, 255, 255, 0.281); */
+    position: absolute;
+    overflow: scroll;
+}
+::-webkit-scrollbar{
+    background-color: rgba(255, 255, 255, 0);
+    width: 10px;
+}
+::-webkit-scrollbar-corner{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.247);
+    transition: 1s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(255, 255, 255, 0.459);
+    transition: 1s;
+}
+::-moz-scrollbar{
+    background-color: rgba(255, 255, 255, 0);
+    width: 10px;
+}
+::-moz-scrollbar-corner{
+    background-color: transparent;
+}
+::-moz-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.247);
+    transition: 1s;
+}
+::-moz-scrollbar-thumb:hover{
+    background-color: rgba(255, 255, 255, 0.459);
+    transition: 1s;
+}
+::-o-scrollbar{
+    background-color: rgba(255, 255, 255, 0);
+    width: 10px;
+}
+::-o-scrollbar-corner{
+    background-color: transparent;
+}
+::-o-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.247);
+    transition: 1s;
+}
+::-o-scrollbar-thumb:hover{
+    background-color: rgba(255, 255, 255, 0.459);
+    transition: 1s;
+}
+.side-bar .list .l-1{
+    height: 50px;
+    /* width: 100%; */
+    position: absolute;
+    transform: translate(0%,-50%);
+    top: calc(var(--i)*20%);
+    left: 10%;
+    color: white;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.568);
+    transition: 0.2s;
+    font-weight: 500;
+}
+.side-bar .list .l-1:hover{
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.side-bar .list .l-1 img{
+    transform: translate(-50%,-50%);
+    right: -25px;
+    top: 15%;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+}
+
+.down{
+    height: 13.5%;
+    width: 100%;
+    background-color: rgb(26, 25, 25);
+    position: fixed;
+    bottom: 0;
+    border-top: rgba(255, 255, 255, 0.137) 1px solid;
+    /* transform: translateY(20px); */
+}
+.down .right{
+    height: 100%;
+    width: 27%;
+    position: absolute;
+    /* background: rgba(255, 255, 255, 0.171); */
+}
+.down .right .song{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 15%;
+    position: absolute;
+    border-radius: 5px;
+}
+.down .right h1{
+    font-size: 15px;
+    color: white;
+    top: 40%;
+    transform: translate(0%,-50%);
+    width: fit-content;
+    position: absolute;
+    left: 30%;
+}
+.down .right p{
+    font-size: 13px;
+    color: white;
+    top: 60%;
+    transform: translate(0%,-50%);
+    width: fit-content;
+    position: absolute;
+    left: 30%;
+}
+.down .right .heart{
+    background-color: grey;
+    height: 15px;
+    width: 10px;
+    transform: rotate(45deg) translate(-50%,-50%);
+    position: absolute;
+    border-radius: 5px 5px 0 0;
+    top: 50%;
+    right: 20%;
+}
+.down .right .heart::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    transform: rotate(-90deg);
+    top: 3px;
+    left: -3px;
+    border-radius: 5px 5px 0 0;
+}
+.down .right .mini{
+    height: 10px;
+    width: 15px;
+    border: 1px white solid;
+    border-radius: 1px;
+    border-bottom: 2px rgba(255, 255, 255, 0.493) solid;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    right: 8%;
+    transform: 0.2s;
+}
+.down .right .mini .box{
+    height: 40%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.411);
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    transform: 0.2s;
+}
+.down .right .mini:hover{
+    border-color: rgb(255, 255, 255);
+    transform: 0.2s;
+}
+.down .right .mini:hover .box{
+    background-color: rgb(255, 255, 255);
+    transform: 0.2s;
+}
+.down .mid{
+    height: 100%;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    /* background-color: rgba(255, 235, 205, 0.349); */
+}
+.down .mid .ico{
+    height: 20px;
+    width: 20px;
+    transform: translate(-50%,-50%);
+    top: 35%;
+    left: 50%;
+    position: absolute;
+    color: blanchedalmond;
+    /* background-color: white; */
+}
+.down .mid .pla{
+    height: 40px;
+    width: 40px;
+}
+.down .mid .bac{
+    transform: translate(-50%,-50%) translateX(-50px);
+}
+.down .mid .for{
+    transform: translate(-50%,-50%) translateX(50px);
+}
+.down .mid .suf{
+    transform: translate(-50%,-50%) translateX(-100px);
+}
+.down .mid .rep{
+    transform: translate(-50%,-50%) translateX(100px);
+}
+.down .mid .bar {
+    height: 20%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 70%;
+    left: 50%;
+    position: absolute;
+}
+.down .mid .bar input{
+    height: 4px;
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.384);
+    transform: translate(-50%,-50%);
+    top: 80%;
+    left: 50%;
+    position: absolute;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+    color: black;
+}
+  
+input[type=range]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   color: black;
+}
+  
+input[type=range]:focus {
+    outline: none; 
+    color: black;
+}
+  
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+    color: black;
+}
+.down .left{
+    height: 100%;
+    width: 20%;
+    right: 0;
+    top: 50%;
+    transform: translate(0%,-50%);
+    /* background-color: rgba(255, 255, 255, 0.26); */
+    position: absolute;
+}
+.down .left .ico{
+    height: 20px;
+    width: 20px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 60%;
+    position: absolute;
+    color: blanchedalmond;
+}
+.down .left .alb{
+    transform: translate(-50%,-50%) translate(-80px);
+}
+.down .left .lap{
+    transform: translate(-50%,-50%) translate(-40px);
+}
+.down .left .bar{
+    background-color: rgba(245, 222, 179, 0.356);
+    height: 4px;
+    width: 30%;
+    border-radius: 3px;
+    transform: translate(0%,-50%);
+    top: 50%;
+    right: 10px;
+    position: absolute;
+}
+
+
+
+.main{
+    height: 88.7%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(15, 15, 15);
+    overflow: scroll;
+}
+.main .back{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(rgb(83, 52, 31),rgb(15, 15, 15));
+}
+.main .top{
+    /* background-color: rgba(148, 89, 49, 0.445); */
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.main .top .b,.f{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 3.5%;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 50%;
+}
+.main .top .f{
+    left: 7.5%;
+}
+.main .top .b ion-icon{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    height: 25px;
+    width: 25px;
+    /* background-color: rgba(0, 0, 0, 0.418); */
+    border-radius: 50%;
+    color: wheat;
+}
+.main .top .f ion-icon{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    height: 25px;
+    width: 25px;
+    /* background-color: rgba(0, 0, 0, 0.418); */
+    border-radius: 50%;
+    color: wheat;
+}
+.main .top .upd{
+    height: 34px;
+    width: 121px;
+    border: white 1px solid;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.473);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    right: 8%;
+}
+.main .top .upd:hover{
+    background-color: rgba(0, 0, 0, 0.63);
+    height: 35px;
+    width: 122px;
+}
+.main .top .upd p{
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.main .top .prof{
+    height: 33px;
+    width: 95px;
+    /* border: white 1px solid; */
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.473);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    right: -3%;
+    transform-style: preserve-3d;
+}
+.main .top .prof ion-icon{
+    height: 34px;
+    width: 34px;
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 0;
+    position: absolute;
+    color: rgb(92, 83, 83);
+}
+.main .top .prof p{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 47%;
+    left: 55%;
+    height: fit-content;
+    width: fit-content;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+.main .top .prof .arrow{
+    transform: translate(0%,-50%) rotate(90deg);
+    height: 10px;
+    width: 10px;
+    left: 75px;
+    color: white;
+    transition: 0.1s;
+}
+.main .top .prof .arrow-a{
+    transform: translate(0%,-50%) rotate(-90deg);
+    transition: 0.1s;
+}
+.main .top .prof .drop{
+    height: 10px;
+    width: 100px;
+    background-color: rgba(26, 26, 26, 0);
+    border-radius: 5px;
+    position: fixed;
+    /* transform: translateZ(-200px); */
+    z-index: 999;
+    top: 110%;
+    right: 0%;
+    transition: 0.1s;
+}
+.main .top .prof .drop-a{
+    background-color: rgb(26, 26, 26);
+    height: 190px;
+    width: 200px;
+    transition: 0.1s;
+}
+.main .top .prof .drop-a .line{
+    height: 21%;
+    width: 95%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 235, 205, 0);
+    top: calc(var(--i)*24%);
+    margin-top: -10%;
+    transition: 0.1s;
+}
+.main .top .prof .drop-a .line:hover{
+    background-color: rgba(255, 255, 255, 0.089);
+    transition: 0.1s;
+}
+.main .top .prof .drop .h1{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    transform: translate(0%,-50%);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0);
+    top: 50%;
+    left: 10px;
+    transition: 0.1s;
+}
+.main .top .prof .drop-a .h1{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    transform: translate(0%,-50%);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0);
+    top: 50%;
+    left: 10px;
+    transition: 0.1s;
+}
+.main .top .prof .drop-a .h1{
+    color: white;
+    transition: 0.1s;
+}
+.main .top .prof .drop ion-icon{
+    height: 15px;
+    width: 15px;
+    top: 50%;
+    left: 87%;
+    color: rgba(255, 255, 255, 0);
+    transition: 0.2s;
+}
+.main .top .prof .drop-a ion-icon{
+    height: 15px;
+    width: 15px;
+    top: 50%;
+    left: 87%;
+    color: rgba(255, 255, 255, 0);
+    transition: 0.2s;
+}
+.main .top .prof .drop-a ion-icon{
+    color: white;
+    transition: 0.2s;
+
+}
+
+
+
+
+
+.main .mid{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgba(245, 222, 179, 0.158); */
+    position: absolute;
+    top: 10%;
+}
+.main .mid h1{
+    width: fit-content;
+    font-size: 30px;
+    transform: translate(-50%,-50%);
+    top: 15%;
+    left: 13%;
+    color: wheat;
+    position: absolute;
+}
+.main .mid .card{
+    height: 80px;
+    width: 29.5%;
+    background-color: rgba(255, 255, 255, 0.062);
+    position: absolute;
+    border-radius: 5px;
+    top: 43%;
+    left: 19%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    transition: 0.2s;
+}
+.main .mid .card:hover{
+    background-color: rgba(255, 255, 255, 0.082);
+    transition: 0.2s;
+}
+.main .mid .c-2{
+    left: 50%;
+}
+.main .mid .c-3{
+    left: 81%;
+}
+.main .mid .c-4{
+    top: 77%;
+    left: 19%;
+}
+
+.main .mid .c-5{
+    top: 77%;
+    left: 50%;
+}
+.main .mid .c-6{
+    top: 77%;
+    left: 81%;
+}
+.main .mid .card .crl{
+    all: unset;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(77, 224, 89, 0);
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    right: -1%;
+    transition: 0.2s;
+}
+.main .mid .card:hover .crl{
+    background-color: rgb(77, 224, 89);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.363);
+    transition: 0.2s;
+
+}
+.main .mid .card .crl ion-icon{
+    height: 25px;
+    width: 25x;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: rgba(255, 255, 255, 0);
+    transition: 0.2s;
+}
+.main .mid .card:hover .crl ion-icon{
+    color: white;
+    transition: 0.2s;
+}
+.main .mid .card .cover{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.2s;
+}
+.main .mid .card:hover .cover{
+    background: linear-gradient(270deg,rgba(255, 255, 255, 0.233),transparent) ;
+    transition: 0.2s;
+}
+.main .mid .card img{
+    height: 100%;
+}
+.main .mid .card h1{
+    font-size: 15px;
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 35%;
+    width: 45%;
+}
+
+
+.main .mid-2{
+    height: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 90%;
+    left: 50%;
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.158); */
+}
+.main .mid-2 h1{
+    transform: translate(-50%,-50%);
+    top:3%;
+    left: 11%;
+    font-size: 26px;
+    color: white;
+    position: absolute;
+    width: fit-content;
+}
+.main .mid-2 p{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: grey;
+    transform: translate(-50%,-50%);
+    top: 3%;
+    left: 95%;
+    position: absolute;
+}
+.main .mid-2 .card{
+    height: 85%;
+    width: 17%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 5px;
+    top: 60%;
+    left: calc(var(--l)*20%);
+    margin-left: -10%;
+}
+.main .mid-2 .card .pic{
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%,-50%);
+    top:95px;
+    left: 50%;
+    position: absolute;
+    border-radius: 3px;
+    background: url(icons/p4.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
+}
+
+
+
+

@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    transition: 0.2s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(70, 70, 70);
+}
+
+body{
+    background-color: white;    
+}
+
+:root{
+    --centerelement: translate(-50% , 0%);
+}
+
+#topbar{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;   
+
+    #back{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url(back.jpg);
+        background-size: cover;        
+
+        #maintext{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            font-size: 80px;
+            text-align: center;
+            width: 100%;
+            top: 45%;
+            font-weight: 11000;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: url("textd.jpg");
+        }
+
+        #navbar{
+            position: relative;
+            height: 60px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.4);
+
+            #content{
+                position: absolute;
+                height: 100%;
+                width: 1100px;
+                transform: var(--centerelement);
+                left: 50%;
+                // background-color: black;
+
+                #logo{
+                    position: absolute;
+                    width: 150px;
+                    height: 100%;
+                    left: 0;
+
+                    h1{
+                        position: absolute;
+                        transform: translate(-50%,-50%);
+                        color: white;
+                        top: 50%;
+                        left: 50%;
+                    }
+                }
+
+                #login{
+                    position: absolute;
+                    right: 0;
+                    height: 40px;
+                    width: 70px;
+                    transform: translate(-0%,-50%);
+                    top: 50%;
+                    border-radius: 20px;
+                    background-color: rgb(255, 255, 255);
+
+                    #pic{
+                        position: absolute;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        // background-color: black;
+                        transform: translate(-50%,-50%) scale(0.8);
+                        top: 50%;
+                        left: 20px;
+
+                        ion-icon{
+                            position: absolute;
+                            transform: translate(-50%,-50%);
+                            top: 50%;
+                            left: 50%;
+                            color: grey;
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                }
+
+                #menus{
+                    position: absolute;
+                    transform: translate(-0%,-50%);
+                    top: 50%;
+                    left: 180px;
+                    height: 20px;
+                    width: 50%;
+                    // background-color: black;
+
+                    #menu{
+                        position: relative;
+                        display: inline-block;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: white;
+                        transform: translate(-0%,-50%);
+                        top: 50%;
+                        height: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    #curve{
+        position: absolute;
+        height: 1000px;
+        width: 4000px;
+        border-radius: 50%;
+        transform: var(--centerelement);
+        left: 50%;
+        top: -505px;
+        border: 1px solid white;
+        box-shadow: 50px 50px 50px white;
+    }
+    
+}
+
+#card{
+    position: relative;
+    transform: var(--centerelement);
+    left: 50%;
+    height: 250px;
+    width: 900px;
+    top: -125px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px #0005;
+
+    #options{
+        position: absolute;
+        height: 30px;
+        width: 50%;
+        top: 20px;
+        left: 20px;
+        // background-color: #0005;
+
+        #btns{
+            position: relative;
+            display: inline-block;
+            height: 30px;
+            width: 80px;
+            border-radius: 10px;
+            transform: translate(-0% ,-50%);
+            top: 50%;
+            border: 2px solid rgba(255, 145, 0, 0);
+            color: #0009;
+
+            p{
+                position: absolute;
+                transform: translate(-0%,-50%);
+                left: 40%;
+                top: 50%;    
+                font-weight: 900;            
+            }
+            ion-icon{
+                position: absolute;
+                transform: translate(-0%,-50%);
+                right: 65%;
+                height: 20px;
+                width: 20px;
+                top: 50%;
+            }
+        }
+
+        .bntActive{
+            color: #000;
+        }
+
+        #btns:hover{
+            color: black;
+        }
+    }
+
+    #to , #from , #dates , #noftvl{
+        height: 100px;
+        width: 250px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-0%,-50%);
+        border-radius: 10px;
+        left: 30px;
+        background-color: rgb(240, 239, 239);
+        
+        p{
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #0007;
+            text-transform: uppercase;
+        }
+    }
+
+    #to{
+        left: 290px;
+    }
+
+    #dates{
+        left: 550px;
+        width: 180px;
+
+        #journey , #return{
+            position: absolute;
+            top: 5px;
+            bottom: 20px;
+            width: 40%;
+            left: 10%;
+            color: #0007;
+            line-height: 15px;
+            font-size: 11px;
+        }
+
+        #return{
+            left: 60%;
+        }
+
+        #sep{
+            position: absolute;
+            transform: var(--centerelement);
+            left: 50%;
+            height: 100%;
+            width: 2px;
+            background-color: #0009;
+        }
+    }
+
+    #noftvl{
+        left: 740px;
+        width: 130px;
+
+        p{
+            text-transform: none;
+            font-size: 11px;
+            top: 10px;
+            left: 20px;
+            width: 50%;
+        }
+    }
+
+    #search
+
+}

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block loop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="fullarea" id="ex-1">
+        <div class="loop1">
+            <div class="area" id="ex-1-layer">
+                <div class="pos" style="--i:1;--j:1;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:1;--j:2;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:1;--j:3;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:1;--j:4;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:1;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:2;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:2;--j:3;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:4;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:1;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:2;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:3;--j:3;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:4;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:1;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:2;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:4;--j:3;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:4;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="block" style="--i:1">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:2">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:3">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:4">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:5">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:6">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:7">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:8">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:9">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:10">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:11">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:12">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:13">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:14">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:15">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:16">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+            </div>
+        </div>
+
+    
+        
+
+
+        <div class="loop4">
+            <div class="area" id="ex-1-layer">
+                <div class="pos" style="--i:1;--j:1;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:1;--j:2;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:1;--j:3;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:1;--j:4;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:1;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:2;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:2;--j:3;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:4;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:1;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:2;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:3;--j:3;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:4;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:1;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:2;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:4;--j:3;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:4;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="block" style="--i:1">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:2">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:3">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:4">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:5">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:6">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:7">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:8">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:9">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:10">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:11">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:12">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:13">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:14">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:15">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:16">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+            </div>
+        </div>
+        <div class="loop2">
+            <div class="area" id="ex-1-layer">
+                <div class="pos" style="--i:1;--j:1;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:1;--j:2;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:1;--j:3;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:1;--j:4;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:1;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:2;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:2;--j:3;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:4;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:1;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:2;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:3;--j:3;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:4;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:1;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:2;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:4;--j:3;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:4;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="block" style="--i:1">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:2">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:3">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:4">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:5">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:6">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:7">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:8">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:9">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:10">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:11">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:12">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:13">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:14">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:15">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:16">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+            </div>
+        </div>
+        <div class="loop3">
+            <div class="area" id="ex-1-layer">
+                <div class="pos" style="--i:1;--j:1;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:1;--j:2;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:1;--j:3;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:1;--j:4;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:1;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:2;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:2;--j:3;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:2;--j:4;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:1;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:2;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:3;--j:3;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:3;--j:4;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:1;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:2;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="pos" style="--i:4;--j:3;background-color: rgba(255, 255, 255, 0.37);"></div>
+                <div class="pos" style="--i:4;--j:4;background-color: rgba(0, 0, 0, 0.486);"></div>
+                <div class="block" style="--i:1">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:2">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:3">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:4">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:5">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:6">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:7">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:8">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:9">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:10">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:11">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:12">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:13">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:14">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:15">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+                <div class="block" style="--i:16">
+                    <div class="face f1"></div>
+                    <div class="face f2"></div>
+                    <div class="face f3"></div>
+                    <div class="face f4"></div>
+                    <div class="face f5"></div>
+                    <div class="face f6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Made By Ansh Bhardwaj</h1>
+</body>
+</html>

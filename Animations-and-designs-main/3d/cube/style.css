@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(45deg,rgb(22, 0, 0),rgb(0, 0, 24));
+}
+.cube{
+    transform-style: preserve-3d;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    /* border: 2px wheat solid; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotateX(.04turn) rotateY(.04turn);
+    animation: rotate 120s infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: translate(-50%,-50%) rotateX(.04turn) rotateY(.04turn);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotateX(.04turn) rotateY(.04turn) rotateZ(15turn);
+    }
+}
+.cube .top,.down,.left,.right,.front,.back{
+    height: 200px;
+    width: 200px;    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.cube .top{
+    background-color: rgba(0, 68, 255, 0.116);
+    transform: translate(-50%,-50%) rotateX(.25turn) translateZ(100px) translateY(100px);
+    animation: top 5s infinite;
+}
+@keyframes top {
+    0%,100%{
+        transform: translate(-50%,-50%) rotateX(.25turn) translateZ(100px) translateY(100px);
+    }
+    30%,50%,70%{
+        transform: translate(-50%,-50%) rotateX(.25turn) translateZ(200px) translateY(100px);
+    }
+}
+.cube .down{
+    background-color: rgba(255, 230, 0, 0.274);
+    transform: translate(-50%,-50%) rotateX(.25turn) translateZ(-100px) translateY(100px);
+    animation: down 5s infinite;
+}
+@keyframes down {
+    0%,100%{
+        transform: translate(-50%,-50%) rotateX(.25turn) translateZ(-100px) translateY(100px);
+    }
+    30%,50%,70%{
+        transform: translate(-50%,-50%) rotateX(.25turn) translateZ(-200px) translateY(100px);
+    }
+}
+.cube .left{
+    background-color: rgba(0, 255, 0, 0.199);
+    transform: translate(-50%,-50%) rotateY(.25turn) translateZ(100px) translateX(-100px);
+    animation: left 5s infinite;
+}
+@keyframes left {
+    0%,100%{
+    transform: translate(-50%,-50%) rotateY(.25turn) translateZ(100px) translateX(-100px);
+}
+    30%,50%,70%{
+    transform: translate(-50%,-50%) rotateY(.25turn) translateZ(200px) translateX(-100px);
+}
+}
+.cube .right{
+    background-color: rgba(255, 0, 0, 0.158);
+    transform: translate(-50%,-50%) rotateY(.25turn) translateZ(-100px) translateX(-100px);
+    animation: right 5s infinite;
+}
+@keyframes right {
+    0%,100%{
+        transform: translate(-50%,-50%) rotateY(.25turn) translateZ(-100px) translateX(-100px);
+    }
+    30%,50%,70%{
+        transform: translate(-50%,-50%) rotateY(.25turn) translateZ(-200px) translateX(-100px);
+    }
+}
+.cube .back{
+    background-color: rgba(0, 81, 255, 0.185);
+    transform: translate(-50%,-50%) translateZ(200px);
+    animation: back 5s infinite;
+}
+@keyframes back {
+    0%,100%{
+    transform: translate(-50%,-50%) translateZ(200px);
+}
+    30%,50%,70%{
+    transform: translate(-50%,-50%) translateZ(300px);
+}
+}
+.cube .front{
+    background-color: rgba(255, 0, 179, 0.205);
+    transform: translate(-50%,-50%);
+    animation: front 5s infinite;
+}
+@keyframes front {
+    0%,100%{
+    transform: translate(-50%,-50%) translateZ(0px);
+}
+    30%,50%,70%{
+    transform: translate(-50%,-50%) translateZ(-100px);
+}
+}
+
+
+
+
+
+.cube .top-1,.down-1,.left-1,.right-1,.front-1,.back-1{
+    height: 100px;
+    width: 100px;    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+.cube .top-1{
+    background-color: rgba(255, 238, 0, 0.404);
+    transform: translate(-50%,-50%) rotateX(.25turn) translateZ(50px) translateY(50px);
+}
+.cube .down-1{
+    background-color: rgba(255, 0, 0, 0.568);
+    transform: translate(-50%,-50%) rotateX(.25turn) translateZ(-50px) translateY(50px);
+}
+.cube .left-1{
+    background-color: rgba(140, 0, 255, 0.507);
+    transform: translate(-50%,-50%) rotateY(.25turn) translateZ(50px) translateX(-50px);
+}
+.cube .right-1{
+    background-color: rgba(0, 132, 255, 0.658);
+    transform: translate(-50%,-50%) rotateY(.25turn) translateZ(-50px) translateX(-50px);
+}
+.cube .back-1{
+    background-color: rgba(51, 255, 0, 0.644);
+    transform: translate(-50%,-50%) translateZ(100px);
+}
+.cube .front-1{
+    background-color: rgba(0, 255, 55, 0.644);
+    transform: translate(-50%,-50%);
+}
+

@@ -1,0 +1,218 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.area{
+    height: 600px;
+    width: 450px;
+    transform: translate(-50%,-50%) scale(0.4);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.area .glass{
+    height: 550px;
+    width: 400px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* border: wheat 1px solid; */
+    /* overflow: hidden; */
+}
+.glass-in{
+    height: 396px;
+    width: 400px;
+    /* border: 1px white solid; */
+    position: absolute;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    animation: clock_rotate 10s infinite;
+}
+.area .glass .parts{
+    transform: translate(-50%,-50%);
+    top: 3%;
+    left:50%;
+    position: absolute;
+}
+.area .glass .part-2{
+    transform: translate(-50%,-50%) rotate(180deg);
+    bottom: -277%;
+}
+.area .glass .parts .up{
+    width: 250px;
+    height: 250px;
+    transform: translate(-50%,-50%) rotate(135deg);
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    overflow: hidden;
+    border-top: 5px white solid;
+    border-right: 5px white solid;
+}
+.area .glass .parts .up::after{
+    content: '';
+    height: 250px;
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    transform: rotate(45deg) translateY(178px) translateX(-30px);
+}
+.area .glass .parts .cover{
+    background-color: rgb(43, 26, 1);
+    border-radius: 10px;
+    border: 5px rgb(43, 26, 1) solid;
+    height: 20px;
+    width: 370px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+.area .glass .middle{
+    border: white 5px solid;
+    background-color: white;
+    height: 31px;
+    width: 20px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.area .glass .part-1 .up .sand{
+    height:180px;
+    width: 350px;
+    background-color: #5e3100;
+    left: 50%;
+    position: absolute;
+    transform: rotate(45deg) translateX(70px) translateY(150px) translate(-50%,-50%);
+    animation: sand-1 10s infinite;
+}
+.area .glass .part-2 .up .sand{
+    height: 180px;
+    width: 350px;
+    background-color: #5e3100;
+    left: 50%;
+    position: absolute;
+    transform: rotate(45deg) translateX(70px) translateY(150px) translate(-50%,-50%);
+    animation: sand-2 10s infinite;
+
+}
+.area .glass .part-1 .up .line{
+    height: 180px;
+    width: 15px;
+    position: absolute;
+    left: 50%;
+    background-color: #5e3100;
+    transform: rotate(45deg) translateX(27px) translateY(30px) translate(-50%,-50%);
+    animation: line-1 10s infinite;
+}
+.area .glass .part-2 .up .line{
+    height: 180px;
+    left: 50%;
+    position: absolute;
+    width: 15px;
+    animation: line-2 10s infinite;
+    background-color: #5e3100;
+    transform: rotate(45deg) translateX(27px) translateY(30px) translate(-50%,-50%);
+}
+
+
+
+@keyframes sand-1 {
+    0%{
+        transform: rotate(45deg) translateX(70px) translateY(150px) translate(-50%,-50%);
+    }
+    25%{
+        transform: rotate(45deg) translateX(70px) translateY(-20px) translate(-50%,-50%);
+    }
+    25.0003%{
+        transform: rotate(45deg) translateX(70px) translateY(320px) translate(-50%,-50%);
+    }
+
+
+
+    60%{
+        transform: rotate(45deg) translateX(70px) translateY(320px) translate(-50%,-50%);
+    }
+    100%{
+        transform: rotate(45deg) translateX(70px) translateY(150px) translate(-50%,-50%);
+    }
+}
+@keyframes sand-2 {
+    0%{
+        transform: rotate(45deg) translateX(70px) translateY(320px) translate(-50%,-50%);
+    }
+    35%{
+        transform: rotate(45deg) translateX(70px) translateY(150px) translate(-50%,-50%);
+    }
+    35.0002%{
+        transform: rotate(45deg) translateX(70px) translateY(150px) translate(-50%,-50%);
+    }
+
+
+
+    58%{
+        transform: rotate(45deg) translateX(70px) translateY(150px) translate(-50%,-50%);
+    }
+    100%{
+        transform: rotate(45deg) translateX(70px) translateY(-20px) translate(-50%,-50%);
+    }
+}
+
+@keyframes clock_rotate {
+    0%{
+        transform: translate(-50%,-50%) rotate(0);
+    }
+    36%{
+        transform: translate(-50%,-50%) rotate(0);
+    }
+    57%{
+        transform: translate(-50%,-50%) rotate(180deg);
+    }
+    99.6%{
+        transform: translate(-50%,-50%) rotate(180deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(0);
+    }
+}
+
+@keyframes line-1 {
+    0%{
+        background-color: transparent;
+    }
+    57.009%{
+        background-color: transparent;
+    }
+    58%{
+        background-color: #5e3100;
+    }
+    100%{
+        background-color: #5e3100;
+    }
+}
+@keyframes line-2 {
+    0%{
+        background-color: #5e3100;
+    }
+    35%{
+        background-color: #5e3100;
+    }
+    35.001%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+

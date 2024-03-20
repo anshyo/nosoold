@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) ,url(.1.png) repeat fixed 100%;
+}
+div{
+    background: linear-gradient(rgba(0,0,0,0.7) ,rgba(0,0,0,0.7)) ;
+    height: 300px;
+    width: 40%;
+    border-radius: 30px;
+}
+div img{
+    position: relative;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+
+}
+div h1{
+    color: white;
+    position: relative;
+    top: -35%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+div a button{
+    border: white 3px solid;
+    border-radius: 10px;
+    background-color: transparent;
+    height: 50px;
+    width: 150px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    margin-left: 70%;
+    margin-top: -5%;
+    transform: translate(-50%,-50%);
+    transition: .5s ease;
+}
+div a button:hover{
+    background-color: rgb(70, 0, 70);
+    border: rgb(70, 0, 70) solid 3px;
+    box-shadow: 0 0 40px rgb(255, 102, 255);
+    transition: .5s ease;
+}
+.c-1{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.c-2{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+}
+.c-3{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+.c-4{
+    position: absolute;
+    top: 60%;
+    left: 55%;
+}
+.c-5{
+    position: absolute;
+    top: 110%;
+    left: 5%;
+}
+.c-6{
+    position: absolute;
+    top: 110%;
+    left: 55%;
+}
+.c-1:hover h1{
+    color: rgb(255, 123, 123);
+    transition: 0.5s ease;
+}
+.c-2:hover h1{
+    color: rgb(255, 123, 123);
+    transition: 0.5s ease;
+}
+.c-3:hover h1{
+    color: rgb(255, 123, 123);
+    transition: 0.5s ease;
+}
+.c-4:hover h1{
+    color: rgb(255, 123, 123);
+    transition: 0.5s ease;
+}
+.c-5:hover h1{
+    color: rgb(255, 123, 123);
+    transition: 0.5s ease;
+}
+.c-6:hover h1{
+    color: rgb(255, 123, 123);
+    transition: 0.5s ease;
+}

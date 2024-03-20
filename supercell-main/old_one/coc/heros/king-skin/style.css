@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.6) ,  rgba(0,0,0,0.6)) , url(.1.jpg) repeat fixed 100%;
+    background-size: cover;
+}
+div{
+    height: 40%;
+    width: 20%;
+    background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) ;
+    border-radius: 20px;
+    transition: 0.6s ease;
+}
+div:hover{
+    background-color: rgb(63, 2, 63);
+    box-shadow: 0 0 30px rgb(255, 67, 255);
+    transition: 0.6s ease;
+}
+div img{
+    height: 54%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    top: 27%;
+    left: 50%;
+}
+div h1{
+    color: white;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 20%;    
+    text-align: center;
+}
+.s-1{
+    top: 5%;
+    left: 2.5%;
+    position: absolute;
+}
+.s-2{
+    top: 5%;
+    left: 26.5%;
+    position: absolute;
+}
+.s-3{
+    top: 5%;
+    left: 52.5%;
+    position: absolute;
+}
+.s-4{
+    top: 5%;
+    left: 76.5%;
+    position: absolute;
+}
+.s-5{
+    top: 55%;
+    left: 2.5%;
+    position: absolute;
+}
+.s-6{
+    top: 55%;
+    left: 26.5%;
+    position: absolute;
+}
+.s-7{
+    top: 55%;
+    left: 52.5%;
+    position: absolute;
+}
+.s-8{
+    top: 55%;
+    left: 76.5%;
+    position: absolute;
+}
+.s-9{
+    top: 105%;
+    left: 2.5%;
+    position: absolute;
+}
+.s-10{
+    top: 105%;
+    left: 26.5%;
+    position: absolute;
+}
+.s-11{
+    top: 105%;
+    left: 52.5%;
+    position: absolute;
+}
+.s-12{
+    top: 105%;
+    left: 76.5%;
+    position: absolute;
+}
+.s-13{
+    top: 155%;
+    left: 2.5%;
+    position: absolute;
+}
+.s-14{
+    top: 155%;
+    left: 26.5%;
+    position: absolute;
+}
+.s-15{
+    top: 155%;
+    left: 52.5%;
+    position: absolute;
+}
+.s-16{
+    top: 155%;
+    left: 76.5%;
+    position: absolute;
+}

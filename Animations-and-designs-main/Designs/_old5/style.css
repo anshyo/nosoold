@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: boldfont;
+    transition: 0.5s;
+}
+@font-face {
+    font-family: boldfont;
+    src: url(Quicksand/static/Quicksand-Bold.ttf);
+}
+:root{
+    --pgt: translate(-50%,0%);
+    --preview: #fff1;
+}
+body{
+    background-color: rgb(20, 20, 20);
+}
+.onstart{
+    position: absolute;
+    transform: var(--pgt);
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    overflow: hidden;
+}
+.onstart .svg{
+    position: absolute;
+    transform: var(--pgt) rotate(25deg);
+    bottom: 0;
+    right: 0;    
+}
+.onstart .outbtn{
+    position: absolute;
+    transform: var(--pgt);
+    left: 50%;
+    width: max-content;
+    height: 2px;
+    /* background-color: var(--preview); */
+}
+.onstart .btnout{
+    position: relative;
+    bottom: 0;
+    top: 20px;
+    right: 0;
+    /* background-color: rgb(0, 0, 0); */
+    height: 70px;
+    width: 550px;
+    border: 5px solid transparent;
+    border-radius: 75px;
+    display: inline-block;
+}
+.onstart .b1{
+    width: 170px;
+}
+.onstart .btnout:hover{
+    border: 5px solid black;
+}
+.onstart .btnout:active{
+    border: 5px solid rgb(255, 255, 255);
+}
+.onstart .btn{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    border-radius: 75px;
+    width: 540px;
+    cursor: pointer;
+}
+.onstart .b1 .btn{
+    width: 160px;
+}
+.onstart .btn h1{
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 17px;
+    width: 600px;
+    text-align: center;
+    animation: h12a 1s forwards;
+    filter: blur(00px);
+}
+.pg1{
+    position: relative;
+    height: 250px;
+    width: 1000px;
+    transform: translate(-50%,-50%);
+    /* background-color: var(--preview); */
+    left: 50%;
+    top: 50%;   
+}
+.pg1 h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-size: 150px;
+    /* filter: blur(100px); */
+    /* animation: h1a 1s forwards; */
+    /* color: transparent; */
+    text-align: center;
+    /* width: 1000px; */
+}
+.pg1 h1::after{
+    content: 'ANIONS';
+    /* content: 'PLOIDY OF ANIMATIONS'; */
+}
+.pg1 h1::after:hover{
+    content: 'PLOIDY OF ANIMATIONS';
+}
+@keyframes h1a {
+    0%{
+        filter: blur(100px);
+        color: transparent;
+    }
+    70%{
+        color: transparent;
+    }
+    100%{
+        filter: blur(00px);
+        color: white;
+    }
+}
+.creditsout{
+    position: absolute;
+    transform: var(--pgt);
+    left: 50%;
+    bottom: 0;
+    /* background-color: rgb(0, 0, 0); */
+    height: 70px;
+    width: 190px;
+    border: 5px solid transparent;
+    border-radius: 75px;
+}
+.creditsout:hover{
+    border: 5px solid black;
+}
+.creditsout:active{
+    border: 5px solid rgb(255, 255, 255);
+}
+.pg1 .credits{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    border-radius: 75px;
+    width: 180px;
+    cursor: pointer;
+}
+.pg1 .credits h1{
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 17px;
+    width: 100px;
+    animation: h12a 1s forwards;
+    filter: blur(00px);
+}
+/* .pg1 .hr{
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    border: 2px solid white;
+    border-radius: 3px;
+    position: absolute;
+    width: 800px;
+    transform: translate(-50%,-50%);
+}
+.pg1 p{
+    color: white;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 190px;
+    position: absolute;
+    z-index: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+} */
+.open{
+    position: absolute;
+    transform: var(--pgt);
+    left: 50%;
+    background-color: black;
+    bottom: 0;
+    height: 85px;
+    width: 70%;
+    border-radius: 75px 75px 0 0;
+    overflow: hidden;
+    background-color: black;
+
+/* toremove */
+
+    /* height: 100%;
+    width: 100%;
+    border-radius: 0; */
+}
+.openaf{
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    /* background-color: rgb(); */
+}
+.arrow{
+    position: absolute;
+    bottom: 30px;
+    transform: var(--pgt);
+    color: white;
+    left: 50%;
+    height: 25px;
+    width: 25px;
+
+/* toremove */
+
+    /* transform: var(--pgt) rotate(180deg);
+    bottom: 10px;
+    background-color: rgb(19, 19, 19);
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer; */
+}
+.arrowa{
+    animation: arrorws 1s infinite;
+    
+/* toremove */
+
+    /* animation: arrosrws 1s infinite; */
+}
+.ind{
+    transform: var(--pgt) rotate(180deg);
+    bottom: 10px;
+    background-color: rgb(19, 19, 19);
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+@keyframes arrorws {
+    50%{
+        transform: var(--pgt) translateY(-1px);
+    }
+}
+.open .text{
+    position: absolute;
+    bottom: 10px;
+    transform: var(--pgt);
+    color: rgb(168, 168, 168);
+    left: 50%;
+    font-size: 13px;
+    transition: 0.05s;
+
+/* toremove */
+
+    /* color: transparent;
+    transform: var(--pgt) scale(0); */
+}
+.open .paf{
+    color: transparent;
+    transform: var(--pgt) scale(0);
+}
+.open .mainscreen{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    height: 450px;
+    width: 900px;
+    top: 50%;
+    left: 50%;
+    border-radius: 75px;
+    background-color: rgb(19, 19, 19 , 0);
+    overflow: hidden;
+    color: white;
+}
+.open .mainscreenaf{
+    background-color: rgb(19, 19, 19);
+}

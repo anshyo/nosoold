@@ -1,0 +1,792 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-corner{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(60, 101, 189, 0.089);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(245, 222, 179, 0.295);
+}
+
+body{
+    background-color: black;
+}
+.bodyAfter{
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+.menubar{
+    height: 70px;
+    width: 100%;
+    /* background-color: #fff1; */
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+}
+.menubar .logo{
+    height: 10px;
+    width: 10px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    left: 7%;
+    position: absolute;
+}
+.menubar .logo img{
+    height: 40px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+.menubar ul{
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 27%;
+}
+.menubar ul li{
+    display: inline-block;
+    padding-left: 40px;
+    font-size: 13.5px;
+    font-weight: 700;
+}
+.menubar .con{
+    height: fit-content;
+    width: fit-content;
+    top: 50%;
+    transform: translate(-100%,-50%);
+    right: -5%;
+    position: absolute;
+}
+.menubar .con ion-icon{
+    color: aliceblue;
+    height: 21px;
+    width: 21px;
+    padding-left: 10px;
+}
+
+.mid{
+    height: 50%;
+    width: 35%;
+    /* background-color: #fff1; */
+    position: absolute;
+    top: 45%;
+    transform: translate(-0%,-50%);
+    left: 5%;
+}
+.mid .head{
+    height: fit-content;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: #fff1; */
+}
+.mid .head h1{
+    font-size: 50px;
+    color: white;
+    letter-spacing: 10px;
+    line-height: 60px;
+}
+.mid .head p{
+    color: rgba(240, 248, 255, 0.349);
+    font-size: 12px;
+    width: 250%;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.mid button{
+    height: 35px;
+    width: 150px;
+    font-weight: 700;
+    background-color: white;
+    border: white 2px solid;
+    border-radius: 0;
+    top: 83%;
+    position: absolute;
+    transform: 0.4s;
+} 
+.mid button:hover{
+    background-color: transparent;
+    color: white;
+    transform: 0.4s;
+}
+
+/* _____________________________________________________new Games______________________________ */
+
+.allg{
+    height: 320px;
+    width: 600px;
+    /* border: white solid; */
+    top: 45%;
+    position: absolute;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    background:linear-gradient(rgba(0, 0, 0, 0.164),rgba(0, 0, 0, 0.76)),url(allg.jpg) center;
+    background-size: cover;
+    transition: 1s ease;
+}
+
+/* ___________________________________all games download_________________________ */
+
+.gamedl{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    color: wheat;
+    position: fixed;
+    z-index: 2;
+    top: -100%;
+    transition: 0.3s;
+}
+.gamedl ion-icon{
+    color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+.gamedlAfter{
+    top: 0;
+    transition: 0.3s;
+}
+.gamedl h1{
+    transform: translate(-50%,-50%);
+    left: 50%;
+    position: absolute;
+    width: fit-content;
+}
+.gamedl .android{
+    top: 10%;
+}
+.gamedl .apple{
+    top: 40%;
+}
+.gamedl .windows{
+    top: 70%;
+}
+.gamedl .game-an , .game-ap , .emltr{ 
+    height: 150px;
+    width: 70%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+}
+.gamedl .game-an{
+    top: 25%;
+}
+.gamedl .game-ap{
+    top: 55%;
+}
+.gamedl .emltr{
+    top: 85%;
+}
+.gamedl .game-an div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0.8);
+    top: 50%;
+    left: calc(var(--i)*20%);
+    margin-left: -10%;
+    border-radius: 50%;
+}
+.gamedl .game-ap div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0.8);
+    top: 50%;
+    border-radius: 50%;
+    left: calc(var(--i)*20%);
+    margin-left: -10%;
+}
+.gamedl .emltr div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0.8);
+    top: 50%;
+    border-radius: 50%;
+    left: calc(var(--i)*25%);
+    margin-left: 0%;
+}
+
+/* _______________________________________allgames_________________________________________ */
+
+.games{
+    height: 380%;
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    background-color: rgb(14, 14, 14);
+}
+
+/* __________________________________________Clash of clans_____________________________________ */
+
+.games .coc{
+    height: 400px;
+    width: 90%;
+    /* background-color: #fff1; */
+    transform: translate(-50%,-0%);
+    top: 100px;
+    left: 50%;
+    position: absolute;
+}
+.games .coc .reviews{
+    top: 8%;
+    left: 79%;
+    transform: scale(0.6);
+    font-size: 16px;
+    border: 0;
+    color: rgb(197, 195, 195);
+}
+.games .coc .reviews:hover{
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+}
+.games .coc .head{
+    color: wheat;
+    height: fit-content;
+    width: max-content;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+.games .coc .head h1{
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.games .coc p{
+    font-size: 13px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.281);
+    margin-left: 3%;
+    margin-right: 10%;
+    position: absolute;
+    top: 20%;
+}
+.games .coc button{
+    height: 35px;
+    width: 150px;
+    font-weight: 700;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.849);
+    border: rgba(255, 255, 255, 0.781) 2px solid;
+    border-radius: 0;
+    top: 33%;
+    left: 3%;
+    position: absolute;
+}
+.games .coc button:hover{
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+.games .coc .b2{
+    left: 17%;
+}
+.games .coc .img{
+    height: 50%;
+    width: 90%;
+    /* background-color: #fff1; */
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    overflow: scroll;
+    /* box-shadow: inset 0 0 20px black; */
+}
+.games .coc .img .vid{
+    height: 95%;
+    width: 350px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.games .coc .img img{
+    height: 95%;
+    width: 350px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    left: calc(var(--i)*400px);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+/* _______________________________________________Clash Royale_________________________________________ */
+
+.games .cr{
+    height: 400px;
+    width: 90%;
+    /* background-color: #fff1; */
+    transform: translate(-50%,-0%);
+    top: 600px;
+    left: 50%;
+    position: absolute;
+}
+.games .cr .reviews{
+    top: 8%;
+    left: 79%;
+    transform: scale(0.6);
+    font-size: 16px;
+    border: 0;
+    color: rgb(197, 195, 195);
+}
+.games .cr .reviews:hover{
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+}
+.games .cr .head{
+    color: wheat;
+    height: fit-content;
+    width: max-content;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+.games .cr .head h1{
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.games .cr p{
+    font-size: 13px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.281);
+    margin-left: 3%;
+    margin-right: 10%;
+    position: absolute;
+    top: 20%;
+}
+.games .cr button{
+    height: 35px;
+    width: 150px;
+    font-weight: 700;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.849);
+    border: rgba(255, 255, 255, 0.781) 2px solid;
+    border-radius: 0;
+    top: 33%;
+    left: 3%;
+    position: absolute;
+}
+.games .cr button:hover{
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+.games .cr .b2{
+    left: 17%;
+}
+.games .cr .img{
+    height: 50%;
+    width: 90%;
+    /* background-color: #fff1; */
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    overflow: scroll;
+    /* box-shadow: inset 0 0 20px black; */
+}
+.games .cr .img .vid{
+    height: 95%;
+    width: 350px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.games .cr .img img{
+    height: 95%;
+    width: 100px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    margin-right: 20px;
+    left: calc(var(--i)*150px);
+    margin-left: 250px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+/* __________________________________________________Brawl Stars____________________________________________ */
+
+.games .br{
+    height: 400px;
+    width: 90%;
+    /* background-color: #fff1; */
+    transform: translate(-50%,-0%);
+    top: 1100px;
+    left: 50%;
+    position: absolute;
+}
+.games .br .reviews{
+    top: 8%;
+    left: 79%;
+    transform: scale(0.6);
+    font-size: 16px;
+    border: 0;
+    color: rgb(197, 195, 195);
+}
+.games .br .reviews:hover{
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+}
+.games .br .head{
+    color: wheat;
+    height: fit-content;
+    width: max-content;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+.games .br .head h1{
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.games .br p{
+    font-size: 13px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.281);
+    margin-left: 3%;
+    margin-right: 10%;
+    position: absolute;
+    top: 20%;
+}
+.games .br button{
+    height: 35px;
+    width: 150px;
+    font-weight: 700;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.849);
+    border: rgba(255, 255, 255, 0.781) 2px solid;
+    border-radius: 0;
+    top: 33%;
+    left: 3%;
+    position: absolute;
+}
+.games .br button:hover{
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+.games .br .b2{
+    left: 17%;
+}
+.games .br .img{
+    height: 50%;
+    width: 90%;
+    /* background-color: #fff1; */
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    overflow: scroll;
+    /* box-shadow: inset 0 0 20px black; */
+}
+.games .br .img .vid{
+    height: 95%;
+    width: 350px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.games .br .img img{
+    height: 95%;
+    width: 350px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    left: calc(var(--i)*400px);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+/* _____________________________________________________Hay Day_______________________________________________ */
+
+.games .hd{
+    height: 400px;
+    width: 90%;
+    /* background-color: #fff1; */
+    transform: translate(-50%,-0%);
+    top: 1600px;
+    left: 50%;
+    position: absolute;
+}
+.games .hd .reviews{
+    top: 8%;
+    left: 79%;
+    transform: scale(0.6);
+    font-size: 16px;
+    border: 0;
+    color: rgb(197, 195, 195);
+}
+.games .hd .reviews:hover{
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+}
+.games .hd .head{
+    color: wheat;
+    height: fit-content;
+    width: max-content;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+.games .hd .head h1{
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.games .hd p{
+    font-size: 13px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.281);
+    margin-left: 3%;
+    margin-right: 10%;
+    position: absolute;
+    top: 20%;
+}
+.games .hd button{
+    height: 35px;
+    width: 150px;
+    font-weight: 700;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.849);
+    border: rgba(255, 255, 255, 0.781) 2px solid;
+    border-radius: 0;
+    top: 33%;
+    left: 3%;
+    position: absolute;
+}
+.games .hd button:hover{
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+.games .hd .b2{
+    left: 17%;
+}
+.games .hd .img{
+    height: 50%;
+    width: 90%;
+    /* background-color: #fff1; */
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    overflow: scroll;
+    /* box-shadow: inset 0 0 20px black; */
+}
+.games .hd .img .vid{
+    height: 95%;
+    width: 350px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.games .hd .img img{
+    height: 95%;
+    width: 350px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    left: calc(var(--i)*400px);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+/* _____________________________________________________Boom Beach_______________________________________________ */
+
+.games .bb{
+    height: 400px;
+    width: 90%;
+    /* background-color: #fff1; */
+    transform: translate(-50%,-0%);
+    top: 2100px;
+    left: 50%;
+    position: absolute;
+}
+.games .bb .reviews{
+    top: 8%;
+    left: 79%;
+    transform: scale(0.6);
+    font-size: 16px;
+    border: 0;
+    color: rgb(197, 195, 195);
+}
+.games .bb .reviews:hover{
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+}
+.games .bb .head{
+    color: wheat;
+    height: fit-content;
+    width: max-content;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+.games .bb .head h1{
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.games .bb p{
+    font-size: 13px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.281);
+    margin-left: 3%;
+    margin-right: 10%;
+    position: absolute;
+    top: 20%;
+}
+.games .bb button{
+    height: 35px;
+    width: 150px;
+    font-weight: 700;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.849);
+    border: rgba(255, 255, 255, 0.781) 2px solid;
+    border-radius: 0;
+    top: 33%;
+    left: 3%;
+    position: absolute;
+}
+.games .bb button:hover{
+    border-color: white;
+    color: black;
+    background-color: white;
+}
+.games .bb .b2{
+    left: 17%;
+}
+.games .bb .img{
+    height: 50%;
+    width: 90%;
+    /* background-color: #fff1; */
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    overflow: scroll;
+    /* box-shadow: inset 0 0 20px black; */
+}
+.games .bb .img .vid{
+    height: 95%;
+    width: 350px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.games .bb .img img{
+    height: 95%;
+    width: 350px;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    left: calc(var(--i)*400px);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+/* _______________________________________________________reviews__________________________________________ */
+
+.games .rewin{
+    height: 80px;
+    width: 300px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: -11%;
+    left: 64.8%;
+    transform: scale(0);
+}
+.games .rewinAfter{
+    transform: scale(1);
+}
+.games .rewin::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg) translate(-50%,-50%);
+    background-color: rgb(0, 0, 0);
+    top:100%;
+    left: 80%;
+    border-radius: 5px;
+}
+.games .rewin .ratePs{
+    color: white;
+    transform: translate(-50%,-50%);
+    top: 30%;
+    left: 25%;
+    width: fit-content;
+    position: absolute;
+    margin: 0;
+}
+.games .rewin .rateAs{
+    color: white;
+    transform: translate(-50%,-50%);
+    top: 30%;
+    left: 75%;
+    width: fit-content;
+    position: absolute;
+    margin: 0;
+}
+.games .rewin .ps{
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    width: fit-content;
+    margin: 0;
+}
+.games .rewin .as{
+    color: white;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    width: fit-content;
+    margin: 0;
+}
+.games .rewin .divison{
+    height: 50%;
+    width: .5px;
+    background-color: aliceblue;
+    border: .5px white solid;
+    border-radius: 2px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+/* ____________________________blurClasses______________________________ */
+
+.menubarBlur{
+    filter: blur(5px);
+}
+.midBlur{
+    filter: blur(5px);
+}
+.allgBlur{
+    filter: blur(5px);
+}
+.gamesBlur{
+    filter: blur(5px);
+}
+

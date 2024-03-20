@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family : monospace;
+}
+body{
+    background-color: rgb(20, 20, 20);
+    scroll-behavior: smooth;
+}
+:root{
+    --boxclr: rgba(255, 255, 255, 0.062);
+}
+.menubar{
+    height: 60px;
+    width: 900px;
+    position: absolute;
+    transform: translate(-50%,-0%);
+    left: 50%;
+    top: 10px;
+    background-color: var(--boxclr);
+    border-radius: 10px;
+}
+.menubar .logo{
+    height: 40px;
+    width: 150px;
+    /* border: 1px solid #fff1; */
+    position: absolute;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    left: 20px;
+    background: url(logo.png) center;
+    background-size: cover;
+}
+.menubar .menus{
+    height: 20px;
+    width: 400px;
+    /* border: 1px solid #fff1; */
+    position: absolute;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    left: 200px;
+}
+.menubar .menus h1{
+    height: fit-content;
+    width: fit-content;
+    text-align: left;
+    position: relative;
+    color: white;
+    display: inline-block;
+    padding-right: 20px;
+    top: 50%;
+    font-size: 13px;
+    font-weight: 400;
+    transform: translate(-0%,-50%);
+
+}
+.menubar .icons{
+    height: 15px;
+    width: 120px;
+    position: absolute;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    right: 20px;
+}
+.menubar .icons ion-icon{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    color: antiquewhite;
+    left: calc(var(--i)*30px);
+}
+.d1{
+    position: absolute;
+    transform: translate(-50%,-0%);
+    height: 400px;
+    width: 900px;
+    /* border: #fff3 solid 2px; */
+    top: 80px;
+    left: 50%;
+}
+.d1 .topic{
+    position: absolute;
+    height: 100%;
+    width: 590px;
+    background-color: var(--boxclr);
+    border-radius: 10px;
+}
+.d1 .topic .heading{
+    position: absolute;
+    height: 70px;
+    width: 500px;
+    left: 40px;
+    top: 20px;
+}
+.d1 .topic .heading h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    height: fit-content;
+    width: fit-content;
+    transform: translate(-0%,-50%);
+    position: absolute;
+    top: 50%;
+}
+.d1 .topic .para{
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    /* border: 1px solid #fff1; */
+}
+.d1 .topic .para p{
+    text-align: left;
+    color: #fff9;
+    font-size: 15px;
+    font-weight: 200px;
+}
+.d1 .topic .btns{
+    position: absolute;
+    height: 110px;
+    width: 500px;
+    left: 40px;
+    top: 250px;
+    /* border: 1px solid #fff1; */
+}
+.d1 .topic .btns .btn{
+    position: absolute;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.034);
+    width: 100px;
+}
+.d1 .topic .btns .b1{
+    width: 290px;
+}
+.d1 .topic .btns .b2{
+    width: 200px;
+    right: 0;
+}
+.d1 .topic .btns .b3{
+    bottom: 0;
+    width: 200px;
+}
+.d1 .topic .btns .b4{
+    bottom: 0;
+    right: 0;
+    width: 290px;
+}
+.d1 .pic{
+    position: absolute;
+    height: 195px;
+    width: 300px;
+    right: 0;
+    background-color: var(--boxclr);
+    border-radius: 10px;
+}
+.d1 .pic1 .div{
+    position: absolute;
+    height: 110px;
+    width: 230px;
+    background: url(pic1.jpg) , linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5));
+    background-size: cover;
+    border-radius: 10px;
+    transform: translate(-50%,-0%);
+    left: 50%;
+    top: 20px;
+}
+.ng{
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 83%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.034);
+}
+.d1 .pic1 p{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: rgb(241, 241, 241);
+    font-size: 18px;
+    font-weight: 500;
+    left: 50%;
+    top: 50%;
+}
+.d1 .pic2{
+    bottom: 0;
+}
+.head2{
+    position: absolute;
+    transform: translate(-50%,0%);
+    top: 490px;
+    height: 80px;
+    width: 900px;
+    left: 50%;
+}
+.head2 .left{
+    height: 100%;
+    width: 690px;
+    position: absolute;
+    background: var(--boxclr);
+    border-radius: 10px;
+}
+.head2 .right{
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    background: var(--boxclr);
+    border-radius: 10px;
+    right: 0;
+}

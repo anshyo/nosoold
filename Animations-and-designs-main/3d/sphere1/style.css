@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.area{
+    height: 100%;
+    width: 100%;
+    /* background-color: #fff1; */
+    position: absolute;
+    transform-style: preserve-3d;
+}
+.area .sphere{
+    height: 220px;
+    width: 220px;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0.5);
+    /* background-color: rgba(106, 182, 182, 0.548); */
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    /* border: 1px solid wheat; */
+    animation: sp 50s infinite;
+    transform-style: preserve-3d;
+}
+@keyframes sp {
+    0%{
+        transform: translate(-50%,-50%) scale(0.5);
+    }
+    10%{
+        transform: translate(-50%,-50%) scale(0.1) rotateX(1turn) rotateY(1turn) rotateZ(1turn);
+    }
+    20%{
+        transform: translate(-50%,-50%) scale(0.7) rotateX(2turn) rotateY(2turn) rotateZ(2turn);
+    }
+    30%{
+        transform: translate(-50%,-50%) scale(0.2) rotateX(3turn) rotateY(3turn) rotateZ(3turn);
+    }
+    40%{
+        transform: translate(-50%,-50%) scale(0.3) rotateX(4turn) rotateY(4turn) rotateZ(4turn);
+    }
+    50%{
+        transform: translate(-50%,-50%) scale(1) rotateX(5turn) rotateY(5turn) rotateZ(5turn);
+    }
+    60%{
+        transform: translate(-50%,-50%) scale(0.2) rotateX(6turn) rotateY(6turn) rotateZ(6turn);
+    }
+    70%{
+        transform: translate(-50%,-50%) scale(0.7) rotateX(7turn) rotateY(7turn) rotateZ(7turn);
+    }
+    80%{
+        transform: translate(-50%,-50%) scale(0.1) rotateX(8turn) rotateY(8turn) rotateZ(8turn);
+    }
+    90%{
+        transform: translate(-50%,-50%) scale(0.2) rotateX(9turn) rotateY(9turn) rotateZ(9turn);
+    }
+    100%{
+        transform: translate(-50%,-50%) scale(0.5) rotateX(10turn) rotateY(10turn) rotateZ(10turn);
+    }
+}
+.area .sphere .c{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    border: dashed 5px rgba(0, 255, 255, 0.418);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotateY(calc(var(--i)*8deg));
+    filter: hue-rotate(calc(var(--i)*10000deg));
+    transform-style: preserve-3d;
+}

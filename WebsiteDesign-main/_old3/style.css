@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(11, 13, 27);
+}
+::-webkit-scrollbar{
+    background: transparent;
+    height: 5px;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    transition: 0.6s;
+    background-color: rgba(138, 165, 255, 0.171);
+}
+::-webkit-scrollbar-thumb:hover{
+    transition: 0.6s;
+    background-color: rgba(169, 168, 255, 0.418);
+}
+.menu{
+    position: relative;
+    transform: translate(-50%,-0%);
+    width: 1000px;
+    height: 80px;
+    left: 50%;
+    z-index: 1;
+    /* background-color: aliceblue; */
+}
+.logo{
+    height: 60px;
+    width: 300px;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    transform: translate(-0%,-50%);
+}
+.logo h1{
+    position: absolute;
+    text-align: left;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    width: 100%;
+    height: fit-content;
+    color: rgb(255, 237, 79);
+    font-weight: 600;
+    font-size: 30px;
+}
+.github{
+    position: absolute;
+    right: 0;
+    transform: translate(-0%,-50%);
+    top: 50%;
+    height: 40px;
+    width: 100px;
+    border: 2px solid rgb(255, 237, 79);
+    background: rgb(255, 237, 79);
+}
+.github h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(11, 17, 27);
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+.page1{
+    position: relative;
+    transform: translate(-50%,-0%);
+    width: 1000px;
+    height: 700px;
+    left: 50%;
+    /* background-color: #0005; */
+}
+.page1 h1{
+    color: white;
+    font-weight: 900;
+    font-size: 100px;
+    transform: translate(-50%,-0%);
+    left: 50%;
+    position: absolute;
+    top: 20px;
+    text-shadow: 0 0 20px black;
+}
+.page1 .card1{
+    position: absolute;
+    transform: translate(-50%,-0%) rotate(45deg);
+    left: 30%;
+    top: 140px;
+    height: 200px;
+    width: 200px;
+    border: 10px solid rgb(255, 237, 79);
+    /* border-radius: 20px; */
+    box-shadow: 0 0 20px black;
+    overflow: hidden;
+    background-color: black;
+    animation: card 4s infinite;
+}
+@keyframes card {
+    0%,100%{
+        transform: translate(-50%,-0%) rotate(45deg);
+    }
+    50%{
+        transform: translate(-50%,-0%) rotate(45deg) translateY(5px) translatex(5px);
+    }
+}
+.page1 .card1 .thumb{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transform: translate(-50%,-50%) rotate(-45deg) scale(2.7);
+    top: 50%;
+    left: 50%;
+}
+.page1 .card1shadow{
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    filter: blur(8px);
+    transform: translate(-50%,-50%);
+    top: 440px;
+    left: 300px;
+    animation: shadow 4s infinite;
+}
+@keyframes shadow {
+    0%,100%{
+        transform: translate(-50%,-50%);
+        filter: blur(8px);
+    }
+    50%{
+        transform: translate(-50%,-50%) scale(1.1);
+        filter: blur(7px);
+    }
+}
+.page1 .card1{
+    position: absolute;
+    transform: translate(-50%,-0%) rotate(45deg);
+    left: 30%;
+    top: 140px;
+    height: 200px;
+    width: 200px;
+    border: 10px solid rgb(255, 237, 79);
+    /* border-radius: 20px; */
+    box-shadow: 0 0 20px black;
+    overflow: hidden;
+    background-color: black;
+    animation: card2 4s infinite;
+}
+@keyframes card2 {
+    0%,100%{
+        transform: translate(-50%,-0%) rotate(45deg);
+    }
+    50%{
+        transform: translate(-50%,-0%) rotate(45deg) translateY(5px) translatex(5px);
+    }
+}
+.page1 .card .thumb{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transform: translate(-50%,-50%) rotate(-45deg) scale(2.7);
+    top: 50%;
+    left: 50%;
+}
+.page1 .card2shadow{
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    filter: blur(8px);
+    transform: translate(-50%,-50%);
+    top: 440px;
+    left: 300px;
+    animation: shadow2 4s infinite;
+}
+@keyframes shadow2 {
+    0%,100%{
+        transform: translate(-50%,-50%);
+        filter: blur(8px);
+    }
+    50%{
+        transform: translate(-50%,-50%) scale(1.1);
+        filter: blur(7px);
+    }
+}
+.page1 .card2{
+    position: absolute;
+    transform: translate(-50%,-0%) rotate(45deg);
+    left: 73%;
+    top: 50px;
+    height: 300px;
+    width: 300px;
+    border: 10px solid rgb(255, 237, 79);
+    /* border-radius: 20px; */
+    box-shadow: 0 0 20px black;
+    overflow: hidden;
+    background-color: black;
+    animation: card2 4s infinite;
+    animation-delay: -2s;
+}
+.page1 .card2 .thumb{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    background: url(thumbnails/meetland.png);
+}
+.page1 .card2shadow{
+    position: absolute;
+    height: 15px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: black;
+    filter: blur(8px);
+    transform: translate(-50%,-50%);
+    top: 470px;
+    animation-delay: -2s;
+    left: 730px;
+    animation: shadow2 4s infinite;
+}
+.page1 .p{
+    position: absolute;
+    font-size: 40px;
+    width: 250px;
+    text-align: center;
+    color: rgb(218, 196, 0);
+    transform: translate(-50%,-0%);
+    left: 50%;
+    top: 270px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.page1 .p font{
+    letter-spacing: 5px;
+}
+.page1 .chain{
+    position: absolute;
+    height: 400px;
+    width: 15px;
+    transform: scale(0.9);
+    /* border: 1px solid wheat; */
+    top: -130px;
+    left: 431px;
+}
+.page1 .c2{
+    top: -120px;
+    left: 554px;
+}
+.page1 .chain .parts{
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    border: 2px solid rgb(49, 44, 0);
+    transform: translate(-50%,-50%) rotate(45deg) translateX(calc(var(--i)*9px)) translateY(calc(var(--i)*9px));
+    left: 50%;
+    /* border-radius: 50px; */
+    /* background-color: rgb(0, 0, 24); */
+}

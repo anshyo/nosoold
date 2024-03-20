@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(0, 0, 0);
+}
+.back{
+    background: linear-gradient(rgb(0, 0, 0),rgba(0, 7, 36, 0.876));
+    height: 30%;
+    width: 100%;
+    top: 70%;
+    position: absolute;
+}
+.back-2{
+    background: linear-gradient(rgba(0, 34, 12, 0.876),rgb(0, 0, 0));
+    height: 30%;
+    width: 100%;
+    position: absolute;
+}
+.area{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    animation: spin 7s infinite;
+}
+@keyframes spin {
+    0%{
+        transform: translate(-50%,-50%) scale(0.5);
+    }
+    20%{
+        transform: translate(-50%,-50%);
+    }
+    25%{
+        transform: translate(-50%,-50%) rotate(90deg) scale(0.3);
+    }
+    45%{
+        transform: translate(-50%,-50%) rotate(90deg);
+    }
+    50%{
+        transform: translate(-50%,-50%) rotate(180deg) scale(0.5);
+    }
+    70%{
+        transform: translate(-50%,-50%) rotate(180deg);
+    }
+    75%{
+        transform: translate(-50%,-50%) rotate(270deg) scale(0.3);
+    }
+    95%{
+        transform: translate(-50%,-50%) rotate(270deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg) scale(0.5);
+    }
+}
+.area .spinner{
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%,-50%) rotate(calc(var(--i)*45deg));
+    position: absolute;
+    /* border: 1px wheat solid; */
+    top: 50%;
+    left: 50%;
+}            
+.area .spinner .dots{
+    height: 15px;
+    width: 15px;
+    background: linear-gradient(90deg,rgb(163, 160, 160),rgb(255, 255, 255));
+    border-radius: 7.5px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    animation: 7s infinite dot;
+}          
+@keyframes dot {
+    0%,100%{
+        top: 10px;
+        left: 10px;
+        height: 15px;
+        box-shadow: 0 0 0px rgb(227, 227, 255);
+  
+    }   
+    20%{
+        top: 10px;
+        left: 10px;
+        width: 120px;
+        height: 15px;
+  
+        box-shadow: 0 0 10px rgb(227, 227, 255);
+    }
+    25%{
+        width: 15px;
+        top: 10px;
+        left: 75px;
+        height: 15px;
+        box-shadow: 0 0 0px rgb(227, 227, 255);
+    }
+    45%{
+        width: 15px;
+        top: 10px;
+        left: 75px;
+        height: 120px;
+  
+        box-shadow: 0 0 10px rgb(227, 227, 255);
+    }
+    50%{
+        width: 15px;
+        top: 75px;
+        left: 75px;
+        height: 15px;
+  
+        box-shadow: 0 0 0px rgb(227, 227, 255);
+    }
+    70%{
+        width: 120px;
+        top: 75px;
+        left: 0px;
+        height: 15px;
+        box-shadow: 0 0 10px rgb(227, 227, 255);
+    }
+    75%{
+        width: 15px;
+        top: 75px;
+        left: 10px;
+        height: 15px;
+  
+        box-shadow: 0 0 0px rgb(227, 227, 255);
+    }
+    90%{
+        width: 15px;
+        top: -10px;
+        left: -30px;
+        height: 15px;
+  
+        box-shadow: 0 0 10px rgb(227, 227, 255);
+    }
+}    
+
+
+
+.area .spinner .d-1{
+    height: 15px;
+    width: 15px;
+    background: linear-gradient(90deg,rgb(163, 160, 160),rgb(255, 255, 255));
+    border-radius: 7.5px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    animation: 7s infinite dot-2;
+}          
+@keyframes dot-2 {
+    0%,100%{
+        top: 10px;
+        left: 10px;
+        height: 15px;
+        box-shadow: 0 0 0px rgb(132, 132, 255);
+    }   
+    20%{
+        top: 10px;
+        left: 10px;
+        width: 120px;
+        height: 15px;
+        box-shadow: 0 0 10px rgb(132, 132, 255);
+    }
+    25%{
+        width: 15px;
+        top: 10px;
+        left: 75px;
+        height: 15px;
+        box-shadow: 0 0 0px rgb(132, 132, 255);
+    }
+    45%{
+        width: 15px;
+        top: 10px;
+        left: 75px;
+        height: 120px;
+        box-shadow: 0 0 10px rgb(132, 132, 255);
+    }
+    50%{
+        width: 15px;
+        top: 75px;
+        left: 75px;
+        height: 15px;
+        box-shadow: 0 0 0px rgb(132, 132, 255);
+    }
+    70%{
+        width: 120px;
+        top: 75px;
+        left: 0px;
+        height: 15px;
+        box-shadow: 0 0 10px rgb(132, 132, 255);
+    }
+    75%{
+        width: 15px;
+        top: 75px;
+        left: 10px;
+        height: 15px;
+        box-shadow: 0 0 0px rgb(132, 132, 255);
+    }
+    90%{
+        width: 15px;
+        top: -10px;
+        left: -30px;
+        height: 15px;
+        box-shadow: 0 0 10px rgb(132, 132, 255);
+    }
+}    

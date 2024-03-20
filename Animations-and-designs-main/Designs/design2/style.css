@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: #000a16;
+}
+.page1{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+}
+.topbar{
+    /* background-color: #0000003a; */
+    height: 80px;
+    width: 100%;
+    position: absolute;
+}
+.topbar div{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.topbar .logo{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    transform: translate(-0%,-50%);
+    /* background-color: #0000003a; */
+}
+.topbar .logo h1{
+    letter-spacing: 5px;
+    color: wheat;
+    font-weight: 900;
+    text-align: center;
+}
+.topbar .login-btn{
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    top: 50%;
+    transform: translate(-0%,-50%);
+    position: absolute;
+    border: white 1px solid;
+    right: 0;
+}
+.topbar .login-btn h1{
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: 400;
+}
+.topbar .menu{
+    height: 20px;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-0%,-50%);
+    /* background-color: #0000003a; */
+}
+.topbar .menu ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-flex;
+}
+.topbar .menu ul li{
+    list-style: none;
+    padding: 45px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.topbar .menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.headings{
+    height: 300px;
+    width: 400px;
+    top: 60%;
+    left: 15%;
+    position: absolute;
+    transform: translate(-0%,-50%);
+    /* background-color: #0000003a; */
+}
+.headings .main-line{
+    height: 50%;
+    width: 80%;
+    position: absolute;
+}
+.headings .main-line h1{
+    position: absolute;
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 0;
+    text-align: left;
+    font-size: 45px;
+    color: white;
+    letter-spacing: 5px;
+}
+.headings .sub-line{
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    transform: translate(0,-50%);
+    left: 0;
+    top: 50%;
+    /* background-color: #0000003a; */
+}
+
+.headings .sub-line h1{
+    position: absolute;
+    transform: translate(0%,-50%);
+    text-align: left;
+    color: rgba(255, 255, 255, 0.605);
+    font-size: 15px;
+    top: 50%;
+    letter-spacing: 5px;
+}
+.headings .videos{
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+    top: 80%;
+    transform: translate(-0%,-50%);
+    position: absolute;
+    border: white 1px solid ;
+}
+.headings .videos h1{
+    font-size: 15px;
+    top: 50%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-0%,-50%);
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+.wavebox{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 10%;
+}
+.waves{
+    transform: rotate(-21deg) translateX(10%) translateY(20%);
+}
+.page2{
+    box-shadow: 0 0 30px black;
+    height: 650px;
+    width: 100%;
+    position: absolute;
+    top: 500px;
+    background: rgb(26, 26, 26);
+}
+.page2 .cards{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(26, 26, 26);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 15%;
+    left: 50%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(15, 15, 15);
+}
+.page2 .c1{
+    left: 25%;
+}
+.page2 .c3{
+    left: 75%;
+}
+.page2 .c4 , .page2 .c5{
+    width: 500px;
+    top: 68%;
+}
+.page2 .c4{
+    left: 30%;
+}
+.page2 .c5{
+    left: 70%;
+}

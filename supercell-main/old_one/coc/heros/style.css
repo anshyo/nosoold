@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) , url(.1.jpg) repeat fixed 100% ;
+    background-size: cover ;
+}
+.home{                                        
+    height: 60px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 3px;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    left: -120px;
+    transition: 2s;
+}
+.home:hover{
+    left: 0px;
+    position: absolute;       
+    transition: 2s;
+}
+div{
+    background : linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    height: 90%;
+    width: 40%;
+    border-radius: 50px;
+}
+
+
+
+
+
+.a .button:hover{
+    border: 3px solid purple;
+    background-color: purple;
+}
+.b .button:hover{
+    border: 3px solid purple;
+    background-color: purple;
+}
+.c .button:hover{
+    border: 3px solid purple;
+    background-color: purple;
+}
+.d .button:hover{
+    border: 3px solid purple;
+    background-color: purple;
+}
+.e .button:hover{
+    border: 3px solid purple;
+    background-color: purple;
+}
+
+
+
+.a .button-2:hover{
+    border: 3px solid purple; 
+    background-color: purple;
+}
+.b .button-2:hover{
+    border: 3px solid purple;
+    background-color: purple;
+}
+.c .button-2:hover{
+    border: 3px solid purple;
+    background-color: purple;
+}
+.d .button-2:hover{
+    border: 3px solid purple;
+    background-color: purple;
+}
+.e .button-2:hover{
+    border: 3px solid purple;
+    background-color: purple;
+}
+
+
+
+
+.a{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transition: 0.5s ease;
+}
+.a img{
+    height: 200px;
+    position: relative;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.a h1{
+    color: white;
+    position: relative;
+    top: 5%;
+    left: 5%; 
+    transition: 0.5s ease; 
+}
+.a p{
+    color: aliceblue;
+    font-style: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative;
+    transition: 0.5s ease;
+    top: 35px;
+}
+.a .button{
+    border: white 3px solid;
+    border-radius: 10px ;
+    height: 60px;
+    width: 150px;
+    color: white;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: relative;
+    top: -20%;
+    left: 30%;
+}
+.a .button-2{
+    border: white 3px solid;
+    border-radius: 10px ;
+    height: 60px;
+    width: 150px;
+    color: white;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: relative;
+    top: 0%;
+    left: 1.5%;
+}
+.a:hover{
+    background-color: rgb(53, 53, 1);
+    transition: 0.5s ease;
+    box-shadow:  0 0 30px rgb(255, 255, 55);
+}
+.a:hover h1{
+    color: rgb(255, 154, 136);
+    transition: 0.5s ease;
+}
+.a:hover p{
+    color: rgb(101, 101, 255);
+    transition: 0.5s ease;
+}
+
+
+
+
+
+.b{
+    position: absolute;
+    top: 5%;
+    transition: 0.5s ease;
+    left: 55%;
+}
+.b img{
+    position: relative;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    height: 200px;
+}
+.b h1{
+    color: white;
+    position: relative;
+    top: 5%;
+    left: 5%; 
+    transition: 0.5s ease; 
+}
+.b p{
+    color: aliceblue;
+    font-style: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative;
+    transition: 0.5s ease;
+    top: 35px;
+}
+.b .button{
+    border: white 3px solid;
+    border-radius: 10px ;
+    height: 60px;
+    width: 150px;
+    color: white;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: relative;
+    top: -20%;
+    left: 39%;
+}
+.b .button-2{
+    border: white 3px solid;
+    border-radius: 10px ;
+    height: 60px;
+    width: 150px;
+    color: white;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: relative;
+    top: 0%;
+    left: 10%;
+}
+.b:hover{
+    background-color: rgb(53, 53, 1);
+    transition: 0.5s ease;
+    box-shadow:  0 0 30px rgb(255, 255, 55);
+}
+.b:hover h1{
+    color: rgb(255, 154, 136);
+    transition: 0.5s ease;
+}
+.b:hover p{
+    color: rgb(101, 101, 255);
+    transition: 0.5s ease;
+}
+
+
+
+.c{
+    position: absolute;
+    top: 97%;
+    left: 5%;
+    transition: 0.5s ease;
+}
+.c img{
+    height: 200px;
+    position :relative;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.c h1{
+    color: white;
+    position: relative;
+    top: 5%;
+    left: 5%; 
+    transition: 0.5s ease; 
+}
+.c p{
+    color: aliceblue;
+    font-style: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative;
+    transition: 0.5s ease;
+    top: 35px;
+}
+.c .button{
+    border: white 3px solid;
+    border-radius: 10px ;
+    height: 60px;
+    width: 150px;
+    color: white;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: relative;
+    top: -20%;
+    left: 30%;
+}
+.c .button-2{
+    border: white 3px solid;
+    border-radius: 10px ;
+    height: 60px;
+    width: 150px;
+    color: white;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: relative;
+    top: 0%;
+    left: 1.5%;
+}
+.c:hover{
+    background-color: rgb(53, 53, 1);
+    transition: 0.5s ease;
+    box-shadow:  0 0 30px rgb(255, 255, 55);
+}
+.c:hover h1{
+    color: rgb(255, 154, 136);
+    transition: 0.5s ease;
+}
+.c:hover p{
+    color: rgb(101, 101, 255);
+    transition: 0.5s ease;
+}
+
+
+.d{
+    position: absolute;
+    top: 97%;
+    left: 55%;
+    transition: 0.5s ease;
+}
+.d img{
+    height: 200px;
+    position: relative;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.d h1{
+    color: white;
+    position: relative;
+    top: 5%;
+    left: 5%; 
+    transition: 0.5s ease; 
+}
+.d p{
+    color: aliceblue;
+    font-style: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative;
+    transition: 0.5s ease;
+    top: 35px;
+}
+.d .button{
+    border: white 3px solid;
+    border-radius: 10px ;
+    height: 60px;
+    width: 150px;
+    color: white;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: relative;
+    top: -20%;
+    left: 30%;
+}
+.d .button-2{
+    border: white 3px solid;
+    border-radius: 10px ;
+    height: 60px;
+    width: 150px;
+    color: white;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: relative;
+    top: 0%;
+    left: 1.5%;
+}
+.d:hover{
+    background-color: rgb(53, 53, 1);
+    transition: 0.5s ease;
+    box-shadow:  0 0 30px rgb(255, 255, 55);
+}
+.d:hover h1{
+    color: rgb(255, 154, 136);
+    transition: 0.5s ease;
+}
+.d:hover p{
+    color: rgb(101, 101, 255);
+    transition: 0.5s ease;
+}
+
+
+
+
+.e{
+    position: absolute;
+    top: 234%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s ease;
+}
+.e img{
+    height: 200px;
+    position: relative;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.e h1{
+    color: white;
+    position: relative;
+    top: 5%;
+    left: 5%; 
+    transition: 0.5s ease; 
+}
+.e p{
+    color: aliceblue;
+    font-style: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative;
+    transition: 0.5s ease;
+    top: 35px;
+}
+.e .button{
+    border: white 3px solid;
+    border-radius: 10px ;
+    height: 60px;
+    width: 150px;
+    color: white;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: relative;
+    top: -20%;
+    left: 30%;
+}
+.e .button-2{
+    border: white 3px solid;
+    border-radius: 10px ;
+    height: 60px;
+    width: 150px;
+    color: white;
+    transition: 0.5s ease;
+    background-color: transparent;
+    position: relative;
+    top: 0%;
+    left: 1.5%;
+}
+.e:hover{
+    background-color: rgb(53, 53, 1);
+    transition: 0.5s ease;
+    box-shadow:  0 0 30px rgb(255, 255, 55);
+}
+.e:hover h1{
+    color: rgb(255, 154, 136);
+    transition: 0.5s ease;
+}
+.e:hover p{
+    color: rgb(101, 101, 255);
+    transition: 0.5s ease;
+}
+
+.bottom{
+    background-color: black;
+    border-radius: 20px 20px 0 0;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    top: 290%;
+}
+.last{
+    position: relative;
+    top: 25px;
+    margin-left: 20px;
+}
+.last li{
+    display: inline-block;
+    
+}
